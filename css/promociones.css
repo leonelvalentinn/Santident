@@ -1,0 +1,351 @@
+@import url("https://fonts.googleapis.com/css2?family=Righteous&display=swap");
+.hero-promociones {
+  width: 100%;
+  background-image: url(../imagenes/fondo-navidad.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Righteous", cursive;
+}
+.container-promo h2 {
+  font-size: 7em;
+  color: #fff;
+}
+.texto {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: #00288d;
+  color: white;
+  padding: 0 20px;
+}
+.texto h2 {
+  margin-bottom: 15px;
+}
+.texto p {
+  margin-bottom: 25px;
+}
+.texto a {
+  padding: 10px 15px;
+  background-color: #feee00;
+  color: black;
+  font-weight: bold;
+  border-radius: 10px;
+  text-decoration: none;
+}
+.promos {
+  width: 100%;
+  position: relative;
+}
+.container-promociones {
+  width: 90%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+  margin: 20px auto;
+  animation-name: leftshow;
+  animation-duration: 12s;
+  animation-iteration-count: infinite;
+  justify-items: center;
+}
+.item-promociones img {
+  max-width: 100%;
+  transition: 0.7s;
+}
+.item-promociones img:hover {
+  transform: scale(0.9);
+  transition: 0.7s;
+}
+.item-promociones img[id=""]:hover {
+  transform: scale(1);
+}
+.container-modal, .container-modal-1, .container-modal-2 {
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 99;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(4, 0, 255, 0.822);
+  opacity: 0;
+  height: 0;
+  width: 0;
+}
+@keyframes quitarModal {
+  0% {
+    width: 100%;
+    height: 100vh;
+    opacity: 1;
+  }
+  50% {
+    width: 100%;
+    height: 100vh;
+    opacity: 0;
+  }
+  100% {
+    width: 0;
+    height: 0;
+    opacity: 0;
+  }
+}
+@keyframes showModal {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.container-modal .item-modal img, .container-modal-1 .item-modal img, .container-modal-2 .item-modal img {
+  width: 220px;
+  margin: 20px 0;
+}
+.item-modal {
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: fixed;
+  color: white;
+  display: none;
+}
+.item-modal .close {
+  cursor: pointer;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #dc3545;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+  transform: translateY(-40px);
+  transform: translateX(40px);
+}
+.item-modal .close i {
+  font-size: 20px;
+  color: white;
+}
+.item-modal .whats {
+  padding: 10px 15px;
+  background-color: #feee00;
+  border-radius: 10px;
+  text-decoration: none;
+  color: black;
+  width: 200px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: center;
+  font-weight: bold;
+}
+.item-modal a:nth-last-child(2){
+  background-color: #009ec0;
+}
+.txt-whats {
+  display: flex;
+  flex-direction: column;
+}
+.txt-whats a {
+  margin-bottom: 10px;
+}
+.texto a:nth-last-child(2) {
+  background-color: #009ec0;
+}
+.texto>div {
+  margin: 10px 0;
+}
+#container-limpieza {
+  position: relative;
+}
+#container-limpieza>div {
+  position: absolute;
+  bottom: 4px;
+  z-index: 1;
+  width: 0;
+  height: 0;
+  background-color: #feed00c9;
+  color: black;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: quitarImg 0.5s linear forwards;
+}
+#container-limpieza > div h2 {
+  opacity: 0;
+  animation: hoverH22 0.5s linear forwards;
+}
+.item-promociones > h3 {
+  text-align: center;
+  background-color: #00288d;
+  color: white;
+}
+@media (min-width: 768px) {
+  .item-promociones > h3 {
+    display: none;
+  }
+  .container-modal .item-modal img, .container-modal-1 .item-modal img, .container-modal-2 .item-modal img {
+    width: 350px;
+  }
+  .container-whats {
+    display: flex;
+  }
+  .whats {
+    margin-right: 10px;
+  }
+  .item-modal .close {
+    width: 50px;
+    height: 50px;
+  }
+  .item-modal .close i {
+    font-size: 30px;
+  }
+  .txt-whats {
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 0;
+  }
+  .txt-whats a {
+    width: 150px;
+  }
+  #container-limpieza:hover > div {
+    animation: hoverImg 0.5s linear forwards;
+  }
+  #container-limpieza:hover > div h2{
+    animation: hoverH2 0.5s linear forwards;
+  }
+}
+@keyframes hoverH2 {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes hoverH22 {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes hoverImg {
+  0% {
+    width: 100%;
+    height: 0;
+  }
+  100% {
+    height: 30%;
+    width: 100%;
+  }
+}
+@keyframes quitarImg {
+  0% {
+    height: 30%;
+    width: 100%;
+  }
+  100% {
+    width: 100%;
+    height: 0;
+  }
+}
+@media (max-width: 768px) {
+  .texto {
+    width: 320px;
+  }
+  .hero-promociones {
+    width: 100%;
+    background-image: url(../imagenes/fondo-navidad.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Righteous", cursive;
+  }
+  .container-promo h2 {
+    font-size: 3em;
+    color: #fff;
+  }
+  .promos {
+    width: 100%;
+    position: relative;
+    z-index: auto;
+    margin-top: 10px;
+    padding: 0px 10px;
+    width: 95%;
+    margin: auto;
+  }
+  .container-promociones {
+    width: 90%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    margin: 20px auto;
+    animation-name: leftshow;
+    animation-duration: 12s;
+    animation-iteration-count: infinite;
+  }
+  @keyframes slide {
+    0% {
+      left: -50%;
+    }
+    10% {
+      left: -100%;
+    }
+    20% {
+      left: -150%;
+    }
+    30% {
+      left: -200%;
+    }
+    40% {
+      left: -250%;
+    }
+    50% {
+      left: -300%;
+    }
+    60% {
+      left: -350%;
+    }
+    70% {
+      left: -400%;
+    }
+    80% {
+      left: -450%;
+    }
+    90% {
+      left: -500%;
+    }
+    100% {
+      left: 0;
+    }
+  }
+  .item-promociones img {
+    width: 320px;
+    object-fit: contain;
+  }
+  .item-promociones img:hover {
+    transform: scale(1.1);
+    transition: 0.7s;
+  }
+  .item-promociones a[id="limpieza"] > img:hover {
+    transform: scale(1);
+  }
+}
