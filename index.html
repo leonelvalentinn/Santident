@@ -197,7 +197,8 @@
       <div class="nosotros-container">
         <div class="txt">
           <h1>Santident Clínica Dental</h1>
-          <p>Molar City, Mexico, is globally recognized as the ‘Dental Capital of the World’, offering top-tier dental care at prices often 70% less than in the U.S.</p>
+          <p>
+            Somos una clínica dental de vanguardia en toda la región, comprometidos con ofrecer los tratamientos más modernos y avanzados, accesibles para todas las personas. En nuestra búsqueda de brindar atención de calidad, creemos firmemente en el poder de una sonrisa y en su impacto en la vida diaria.</p>
         </div>
         <img src="imagenes/nosotros/nosotros.jpg" alt="Equipo Santident">
       </div>
@@ -209,7 +210,9 @@
         <img src="imagenes/nosotros/nosotros-2.jpg" alt="Equipo Santident">
         <div class="txt">
           <h2>Somos una clínica con tecnología e innovación</h2>
-          <p>Molar City, Mexico, is globally recognized as the ‘Dental Capital of the World’, offering top-tier dental care at prices often 70% less than in the U.S.</p>
+          <p>
+            En Santident, nos enorgullece ofrecer tratamientos dentales actuales que incorporan los avances más recientes en el campo odontológico. Nos comprometemos a proporcionar servicios de calidad, respaldados por un equipo de profesionales altamente capacitados y comprometidos con la excelencia en cada paso del proceso.
+            La calidad, el profesionalismo y la seriedad son los pilares fundamentales que guían nuestro enfoque en la atención dental. Buscamos superar las expectativas de nuestros pacientes al ofrecer no solo tratamientos eficaces, sino también una experiencia integral de atención de primera calidad. Cada miembro de nuestro equipo se esfuerza por garantizar que los pacientes se sientan cómodos, informados y respaldados en todo momento.</p>
           <a href="nosotros.html" rel="noopener noreferrer">Conoce más</a>
         </div>
       </div>
@@ -217,7 +220,7 @@
     <!--Fin Nosotros-->
     <div class="tratamientos" id="servicios">
       <h2>TRATAMIENTOS</h2>
-      <div class="servicios">
+      <div class="servicios" id="container-tratamientos">
         <div class="item_servicios">
           <a href="#" id="trata_uno"
             ><img src="imagenes/bichectomia.png" alt=""
@@ -242,7 +245,6 @@
             <h4>Endodoncia Avanzada</h4>
           </div>
         </div>
-
         <div class="item_servicios">
           <a href="#" id="trata_cuatro">
             <img src="imagenes/LimpiezaDental.png" alt=""
@@ -267,7 +269,8 @@
             <h4>Operatoria Dental</h4>
           </div>
         </div>
-        <div class="item_servicios">
+
+        <!--<div class="item_servicios">
           <a href="#" id="trata_siete"
             ><img src="imagenes/protesis_dental.png" alt=""
           /></a>
@@ -323,7 +326,33 @@
             <h4>Diseño de Sonrisa</h4>
           </div>
         </div>
+        <div class="item_servicios">
+          <a href="#" id="trata_once"
+            ><img src="imagenes/operatoria.png" alt=""
+          /></a>
+          <div class="nombre_servicio">
+            <h4>Puente Dental con Implantes</h4>
+          </div>
+        </div>
+        <div class="item_servicios">
+          <a href="#" id="trata_once"
+            ><img src="imagenes/operatoria.png" alt=""
+          /></a>
+          <div class="nombre_servicio">
+            <h4>Restauración Completa de la Boca</h4>
+          </div>
+        </div>
+        <div class="item_servicios">
+          <a href="#" id="trata_once"
+            ><img src="imagenes/operatoria.png" alt=""
+          /></a>
+          <div class="nombre_servicio">
+            <h4>Limpieza</h4>
+          </div>
+        </div>-->
       </div>
+      <button id="more">Ver más</button>
+      <button id="less">Ver menos</button>
     </div>
     <div class="container_tratamientos">
       <i class="far fa-times-circle" id="cerrarTratamientos"></i>
@@ -512,413 +541,6 @@
           <br />
           -Resina propiamente dicha
         </p>
-      </div>
-    </div>
-
-    <div class="main_especialidades" id="todo">
-      <h2 class="titulo_especialidad">NUESTRAS ESPECIALIDADES</h2>
-      <div class="engloba_todo" style="transform: rotateX(0deg)">
-        <div class="card" style="opacity: 1">
-          <div class="card__inner" id="ortondoncia">
-            <img
-              src="imagenes/ortodoncia_servicio.png"
-              alt=""
-              class="img_voltea"
-            />
-            <div class="titulo_especialidades">
-              <span class="pregunta">¿Tienes los dientes torcidos? </span>
-            </div>
-          </div>
-
-          <div class="card__inner" id="endodoncia">
-            <img
-              src="imagenes/endoncia_servicio.png"
-              alt=""
-              class="img_voltea"
-            />
-            <div class="titulo_especialidades">
-              <span class="pregunta"
-                >¿Has sentido dolor, movilidad o cambio de color en alguno de
-                tus dientes?
-              </span>
-            </div>
-          </div>
-          <div class="card__inner" id="periodoncia">
-            <img src="imagenes/periodoncia_n1.png" alt="" class="img_voltea" />
-            <div class="titulo_especialidades">
-              <span class="pregunta"
-                >¿Sientes que tus encías se inflaman, se ven muy rojas o
-                sangran?</span
-              >
-            </div>
-          </div>
-          <div class="card__inner" id="rehabilitacion_oral">
-            <img src="imagenes/rehabilitacion.png" alt="" class="img_voltea" />
-            <div class="titulo_especialidades">
-              <span class="pregunta"
-                >Perdí todos mis dientes, ¿cómo recuperar mi función
-                masticatoria?
-              </span>
-            </div>
-          </div>
-          <div class="card__inner" id="implantes">
-            <img
-              src="imagenes/implantes-dentales.png"
-              alt=""
-              class="img_voltea"
-            />
-            <div class="titulo_especialidades">
-              <span class="pregunta"
-                >¿Puedo recuperar un diente perdido de forma natural?</span
-              >
-            </div>
-          </div>
-
-          <div class="card__inner" id="extracciones">
-            <img src="imagenes/cirugia_oral.png" alt="" class="img_voltea" />
-            <div class="titulo_especialidades">
-              <span class="pregunta"> ¿Cuándo retirarse las cordales? </span>
-            </div>
-          </div>
-
-          <div class="card__inner" id="odontopediatria">
-            <img src="imagenes/odontopediatria.png" alt="" class="img_voltea" />
-            <div class="titulo_especialidades">
-              <span class="pregunta">
-                ¿A partir de qué edad se debe llevar un niño al odontólogo?
-              </span>
-            </div>
-          </div>
-
-          <div class="card__inner" id="estetica">
-            <img
-              src="imagenes/odontologia_estetica.png"
-              alt=""
-              class="img_voltea"
-            />
-            <div class="titulo_especialidades">
-              <span class="pregunta"
-                >¿No te gusta como se ven tus dientes amarillos?
-              </span>
-            </div>
-          </div>
-          <div class="card__inner" id="radiografia">
-            <img
-              src="imagenes/especialidad_radiografia.png"
-              alt=""
-              class="img_voltea"
-            />
-            <div class="titulo_especialidades">
-              <span class="pregunta">¿Necesitas una radiografía?</span>
-            </div>
-          </div>
-          <div class="card__inner" id="ortopedia">
-            <img
-              src="imagenes/especialidad_ortopedia.png"
-              alt=""
-              class="img_voltea"
-            />
-            <div class="titulo_especialidades">
-              <span class="pregunta"
-                >¿Que hacer cuando un niño se chupa el dedo y ves que sus
-                dientes toman rara posición?
-              </span>
-            </div>
-          </div>
-          <div class="card__inner" id="odon_general">
-            <img
-              src="imagenes/especialidad_general.png"
-              alt=""
-              class="img_voltea"
-            />
-            <div class="titulo_especialidades">
-              <span class="pregunta"
-                >¿Sientes sensibilidad en tus dientes al hablar o tomar bebidas
-                frías?
-              </span>
-            </div>
-          </div>
-          <div class="card__inner" id="dental_urgencias">
-            <img
-              src="imagenes/especialidad_urgencias.png"
-              alt=""
-              class="img_voltea"
-            />
-            <div class="titulo_especialidades">
-              <span class="pregunta"
-                >¿Qué debes hacer si tuviste un accidente y se te cayó un
-                diente?</span
-              >
-            </div>
-          </div>
-        </div>
-
-        <div class="descripcion_especialidades" style="display: none">
-          <div id="endo" class="description_specialities" style="display: none">
-            <i class="fas fa-times-circle cerrar" id="cerrarUno"></i>
-            <img src="imagenes/icono_pago.png" alt="" />
-            <h2><span>ENDODONCIA</span></h2>
-            <p>
-              La especialidad de endodoncia es la encargada del manejo del
-              tejido pulpar y periapical del diente. Aquí se realizan
-              procedimientos de endodoncia, también llamados “conductos”, en el
-              que se remueve el tejido pulpar afectado que se encuentra al
-              interior de diente, se desinfecta el espacio y se rellena con un
-              material biocompatible para lograr mantener el diente en boca.
-              <br />
-              El dolor intenso, la movilidad y el cambio de color en un diente
-              son signos y síntomas de afecciones del nervio dental, que se
-              resuelve con el tratamiento de endodoncia.
-            </p>
-          </div>
-          <div id="orto" class="description_specialities" style="display: none">
-            <i class="fas fa-times-circle cerrar" id="cerrarDos"></i>
-            <img src="imagenes/icono_pago.png" alt="" />
-            <h2><span>ORTODONCIA</span></h2>
-            <p>
-              La especialidad de ortodoncia es la encargada de corregir la
-              malposición de los dientes, arcadas dentales y mordidas, con el
-              fin de obtener una oclusión ideal mediante la colocación de
-              aparatos y dispositivos correctivos.
-              <br />
-              Existen actualmente muchas técnicas ortodonticas para la
-              alineación dental. En Odontología Elizabeth Baquero manejamos
-              todas las técnicas actuales de las cuales se destacan la
-              ortodoncia MBT o convencional; ortodoncia de autoligado;
-              ortodoncia invisible con alineadores transparentes, entre otras
-            </p>
-          </div>
-          <div
-            id="perio"
-            class="description_specialities"
-            style="display: none"
-          >
-            <i class="fas fa-times-circle cerrar" id="cerrarSeis"></i>
-            <img src="imagenes/icono_pago.png" alt="" />
-            <h2><span>PERIODONCIA</span></h2>
-            <p>
-              Estas sufriendo seguramente de enfermedad periodontal, así que la
-              Periodoncia es la especialidad que te debe tratar.
-              <br />
-              Esta especialidad trata únicamente enfermedades de los tejidos que
-              soportan y rodean los dientes, manteniendo así la salud, estética
-              y funcionamiento de los dientes asegurando su protección.
-              <br />
-              Existen distintas causas por las cuales nuestras encías puedan
-              inflamarse o sangrar: acúmulo de placa bacteriana, hábito de
-              fumar, restauraciones desadaptadas, boca seca, enfermedades bases,
-              entre otras. También existen distintos tratamientos para la
-              resolución de estas afecciones, tratadas por el Periodoncista.
-            </p>
-          </div>
-          <div id="reha" class="description_specialities" style="display: none">
-            <i class="fas fa-times-circle cerrar" id="cerrarSiete"></i>
-            <img src="imagenes/icono_pago.png" alt="" />
-            <h2><span>REHABILITACIÓN ORAL</span></h2>
-            <p>
-              La Rehabilitación oral es la especialidad que busca restaurar la
-              función y estética de la cavidad oral mediante diferentes técnicas
-              y tratamientos, dentro de los cuales aparece la Odontología
-              digital que simplifica y agiliza la restauración de nuestros
-              dientes y oclusión.
-              <br />
-              Las prótesis dentales son aparatos realizados en materiales
-              biocompatibles que reemplazan los dientes ausentes (desde la
-              pérdida de uno hasta las pérdidas total de los dientes) y general
-              un aspecto natural. Existen diferentes tipos de prótesis, así como
-              de materiales para realizar las mismas; estos se recomiendan según
-              tu necesidad.
-              <br />
-              El bruxismo es el apretamiento de los dientes que genera desgaste
-              de la parte más coronal del tejido dental. Debe ser tratada y
-              controlada para evitar la pérdida/ afectación de los dientes o
-              generar alteraciones hacia la articulación temporo-mandibular.
-              Posteriormente y corregido este hábito para funcional se debe
-              buscar rehabilitar con el fin de devolver funcionalidad y
-              estética.
-            </p>
-          </div>
-          <div id="imp" class="description_specialities" style="display: none">
-            <i class="fas fa-times-circle cerrar" id="cerrarCuatro"></i>
-            <img src="imagenes/icono_pago.png" alt="" />
-            <h2><span>IMPLANTOLOGÍA DENTAL</span></h2>
-            <p>
-              La Implantología oral es la especialidad encargada de recuperar
-              una pieza dental bajo un tratamiento fijo y definitivo: el
-              implante dental, recuperando de esta manera absoluta funcionalidad
-              y estética natural.
-              <br />
-              Un implante dental es un tornillo de titanio biocompatible que
-              actúa como la raíz de un diente natural al introducirse
-              quirúrgicamente dentro del hueso maxilar en el espacio del diente
-              perdido. Este implante será pilar posteriormente de una prótesis
-              que dará la apariencia de la corona dental.
-            </p>
-          </div>
-
-          <div
-            id="cirmax"
-            class="description_specialities"
-            style="display: none"
-          >
-            <i class="fas fa-times-circle cerrar" id="cerrarTres"></i>
-            <img src="imagenes/icono_pago.png" alt="" />
-            <h2><span>CIRUGÍA ORAL</span></h2>
-            <p>
-              La cirugía oral es la Especialidad quirúrgica dedicada al estudio,
-              prevención, diagnóstico y tratamiento de las enfermedades bucales
-              y sus secuelas relacionados a los dientes, tejidos blandos como
-              piel y mucosas, y/o el hueso. Abarca una gran cantidad de
-              procedimientos desde el estudio de biopsia para diagnóstico,
-              extracciones dentales hasta la colocación de implantes dentales.
-              <br />
-              El momento adecuado para el retiro de las cordales es
-              independiente de cada caso. Para esto, se necesita realizar una
-              valoración con el cirujano oral y una radiografía panorámica para
-              evaluar el estado y posición de las cordales y de allí, la
-              necesidad o no de realizar las exodoncias.
-            </p>
-          </div>
-
-          <div id="odon" class="description_specialities" style="display: none">
-            <i class="fas fa-times-circle cerrar" id="cerrarCinco"></i>
-            <img src="imagenes/icono_pago.png" alt="" />
-            <h2><span>ODONTOPEDIATRÍA</span></h2>
-            <p>
-              La Odontopediatría es la Especialidad que da manejo integral a la
-              población infantil-adolescentes (0-18 años), con principal enfoque
-              hacia la prevención, ya que se busca desarrollar, desde una edad
-              temprana, hábitos saludables y consciencia de auto cuidado. Además
-              de detección, diagnóstico, manejo, tratamiento y mantenimiento de
-              la salud oral de la población pediátrica.
-              <br />
-              El momento oportuno para que un niño visite por primera vez el
-              odontólogo es al ver el primer diente en boca, ya que de allí
-              e puede observar alteraciones tempranas o problemas relacionados a
-              la primera dentición (dientes de leche).
-            </p>
-          </div>
-          <div
-            id="estetic"
-            class="description_specialities"
-            style="display: none"
-          >
-            <i class="fas fa-times-circle cerrar" id="cerrarOcho"></i>
-            <img src="imagenes/icono_pago.png" alt="" />
-            <h2><span> ESTÉTICA DENTAL</span></h2>
-            <p>
-              La estética dental es una especialidad dirigida a resolver
-              problemas relacionados con el aspecto de los dientes: forma,
-              color, tamaño, entre otros. Busca idealmente conseguir una belleza
-              natural de la dentadura y perfeccionar la sonrisa mediante
-              distintos procedimientos que nos ofrece la Odontología moderna
-              como lo son: el aclaramiento dental, las carillas, o los diseños
-              de sonrisa constan de diferentes procedimientos, que serán
-              necesarios según el estudio individual de cada caso. En muchas
-              ocasiones los pacientes no se sienten conformes con el color de
-              sus dientes, es allí cuando el Aclaramiento, también llamado
-              Blanqueamiento dental, se destaca.
-            </p>
-          </div>
-          <div
-            id="radio"
-            class="description_specialities"
-            style="display: none"
-          >
-            <i class="fas fa-times-circle cerrar" id="cerrarNueve"></i>
-            <img src="imagenes/icono_pago.png" alt="" />
-            <h2><span>RADIOGRAFÍA PERIAPICAL DIGITAL</span></h2>
-            <p>
-              El servicio de radiografía periapical digital en la clínica
-              Odontología Elizabeth Baquero, nos permite agilizar la detección
-              de lesiones, traumas o enfermedades de los dientes o tejidos
-              adyacentes. <br />
-
-              El diagnóstico temprano es importante para un tratamiento adecuado
-              y oportuno.
-            </p>
-          </div>
-          <div
-            id="ortope"
-            class="description_specialities"
-            style="display: none"
-          >
-            <i class="fas fa-times-circle cerrar" id="cerrarDiez"></i>
-            <img src="imagenes/icono_pago.png" alt="" />
-            <h2><span>ORTOPEDIA</span></h2>
-            <p>
-              La ortopedia dental es la especialidad encargada de estudiar,
-              corregir o modificar los problemas de crecimiento de la
-              estructural bucal y/o óseo-Facial; quitar malos hábitos; evitar o
-              simplificar tratamientos de ortodoncia; entre otros, mediante el
-              uso de de aparatos fijos o removibles en pacientes infantiles.
-              <br />
-
-              El hábito de succión de dedo, succión de labio o de chupete, son
-              hábitos que al prolongarse pueden causar alteraciones en el
-              crecimiento y formación normal de las arcadas dentales, generando
-              desplazamiento de los dientes o mordidas abiertas. Lo ideal es
-              evitar la creación del hábito o eliminarla por medio de aparatos
-              ortopédicos dentales.
-            </p>
-          </div>
-          <div
-            id="general"
-            class="description_specialities"
-            style="display: none"
-          >
-            <i class="fas fa-times-circle cerrar" id="cerrarOnce"></i>
-            <img src="imagenes/icono_pago.png" alt="" />
-            <h2><span>ODONTOLOGÍA GENERAL</span></h2>
-            <p>
-              En el campo de la odontología general se abarcan todos los
-              tratamientos básicos o primarios de la Odontología que buscan
-              mejorar la salud bucal de los pacientes, como lo son: promoción y
-              prevención (flúor, sellantes, instrucción en higiene oral);
-              operatoria (resinas, cuellos); limpieza profesional; exodoncias
-              simples; entre muchos más procedimientos.
-              <br />
-              Representa el contacto inicial con el paciente para su posterior
-              remisión al especialista adecuado según su diagnóstico y necesidad
-              inicial.
-              <br />
-              Existen distintas causas por las cuales se puede percibir
-              sensibilidad dental, la principal causa es la abrasión. Desgaste
-              progresivo de la superficie del diente por causas mecánicas como
-              un cepillado incorrecto, que retrae las encías y expone al medio
-              oral tejido de la raíz dental. Nuestros odontólogos generales
-              pueden tratar esta afección, cubriendo con materiales de última
-              generación estos también llamados “cuellos”.
-            </p>
-          </div>
-          <div
-            id="urgencias"
-            class="description_specialities"
-            style="display: none"
-          >
-            <i class="fas fa-times-circle cerrar" id="cerrarDoce"></i>
-            <img src="imagenes/icono_pago.png" alt="" />
-            <h2><span>URGENCIAS DENTALES</span></h2>
-            <p>
-              El servicio de urgencias esta dedicado a la atención de afecciones
-              que presentan generalmente síntomas de dolor agudo proveniente de
-              algún diente o tejido circundante. Generalmente se trata de
-              traumas por caídas/golpes que genera la pérdida de un diente o la
-              lesión de este; abscesos o lesiones pulpares; o urgencias
-              ortodonticas por el daño de elementos de la ortodoncia.
-              <br />
-              Existen accidentes que generan la avulsión/desalojo del diente.
-              ¿Qué hacer? En caso de ser diente primario/de leche, no se debe
-              reimplantar el diente. La conducta a seguir es asistir de
-              inmediato al odontólogo para que trate el dolor y sangrado y
-              posteriormente esperar la erupción del diente permanente.
-              <br />
-              En caso de ser diente permanente, mantener el diente debajo de la
-              lengua y acudir al odontólogo para su reimplantación y trato de la
-              urgencia.
-            </p>
-          </div>
-        </div>
       </div>
     </div>
 

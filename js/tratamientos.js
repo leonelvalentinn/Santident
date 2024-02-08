@@ -1,93 +1,149 @@
-const textoUno = document.querySelector('#texto_uno');
-const textoDos = document.querySelector('#texto_dos');
-const textoTres = document.querySelector('#texto_tres');
-const textoCuatro = document.querySelector('#texto_cuatro');
-const textoCinco = document.querySelector('#texto_cinco');
-const textoSeis = document.querySelector('#texto_seis');
-const textoSiete = document.querySelector('#texto_siete');
-const textoOcho = document.querySelector('#texto_ocho');
-const textoNueve = document.querySelector('#texto_nueve');
-const textoDiez = document.querySelector('#texto_diez');
-const textoOnce = document.querySelector('#texto_once');
-const modalTexto = document.querySelector('.container_tratamientos');
-const cerrarModal = document.getElementById('cerrarTratamientos');
-const tratamientoUno = document.getElementById('trata_uno');
-const tratamientoDos = document.getElementById('trata_dos');
-const tratamientoTres = document.getElementById('trata_tres');
-const tratamientoCuatro = document.getElementById('trata_cuatro');
-const tratamientoCinco = document.getElementById('trata_cinco');
-const tratamientoSeis = document.getElementById('trata_seis');
-const tratamientoSiete = document.getElementById('trata_siete');
-const tratamientoOcho = document.getElementById('trata_ocho');
-const tratamientoNueve = document.getElementById('trata_nueve');
-const tratamientoDiez = document.getElementById('trata_diez');
-const tratamientoOnce = document.getElementById('trata_once');
+const more = document.getElementById('more')
+const less = document.getElementById('less')
+const container = document.getElementById('container-tratamientos')
+const services = `
+<div class="item_servicios">
+          <a href="#" id="trata_siete"
+            ><img src="imagenes/protesis_dental.png" alt=""
+          /></a>
+          <div class="nombre_servicio">
+            <h4>Blanqueamiento Dental</h4>
+          </div>
+        </div>
+        <div class="item_servicios">
+          <a href="#" id="trata_ocho">
+            <img src="imagenes/coronas_dentales.png" alt=""
+          /></a>
+          <div class="nombre_servicio">
+            <h4>Prótesis Total</h4>
+          </div>
+        </div>
+        <div class="item_servicios">
+          <a href="#" id="trata_nueve">
+            <img src="imagenes/armonizacion-gingival.png" alt=""
+          /></a>
+          <div class="nombre_servicio">
+            <h4>Extracciones</h4>
+          </div>
+        </div>
+        <div class="item_servicios">
+          <a href="#" id="trata_diez"
+            ><img src="imagenes/DiseñoSonrisa.png" alt=""
+          /></a>
+          <div class="nombre_servicio">
+            <h4>Carillas</h4>
+          </div>
+        </div>
+        <div class="item_servicios">
+          <a href="#" id="trata_once"
+            ><img src="imagenes/operatoria.png" alt=""
+          /></a>
+          <div class="nombre_servicio">
+            <h4>Implantes</h4>
+          </div>
+        </div>
+        <div class="item_servicios">
+          <a href="#" id="trata_once"
+            ><img src="imagenes/operatoria.png" alt=""
+          /></a>
+          <div class="nombre_servicio">
+            <h4>Armonización Gingival</h4>
+          </div>
+        </div>
+        <div class="item_servicios">
+          <a href="#" id="trata_once"
+            ><img src="imagenes/operatoria.png" alt=""
+          /></a>
+          <div class="nombre_servicio">
+            <h4>Diseño de Sonrisa</h4>
+          </div>
+        </div>
+        <div class="item_servicios">
+          <a href="#" id="trata_once"
+            ><img src="imagenes/operatoria.png" alt=""
+          /></a>
+          <div class="nombre_servicio">
+            <h4>Puente Dental con Implantes</h4>
+          </div>
+        </div>
+        <div class="item_servicios">
+          <a href="#" id="trata_once"
+            ><img src="imagenes/operatoria.png" alt=""
+          /></a>
+          <div class="nombre_servicio">
+            <h4>Restauración Completa de la Boca</h4>
+          </div>
+        </div>
+        <div class="item_servicios">
+          <a href="#" id="trata_once"
+            ><img src="imagenes/operatoria.png" alt=""
+          /></a>
+          <div class="nombre_servicio">
+            <h4>Limpieza</h4>
+          </div>
+        </div>
+`
+const original = `
+<div class="item_servicios">
+<a href="#" id="trata_uno"
+  ><img src="imagenes/bichectomia.png" alt=""
+/></a>
+<div class="nombre_servicio">
+  <h4>Radiología Dental</h4>
+</div>
+</div>
+<div class="item_servicios">
+<a href="#" id="trata_dos"
+  ><img src="imagenes/exodoncia-dental.png" alt=""
+/></a>
+<div class="nombre_servicio">
+  <h4>Ortodoncia Dental</h4>
+</div>
+</div>
+<div class="item_servicios">
+<a href="#" id="trata_tres">
+  <img src="imagenes/BlanqueamientoDental.png" alt=""
+/></a>
+<div class="nombre_servicio">
+  <h4>Endodoncia Avanzada</h4>
+</div>
+</div>
+<div class="item_servicios">
+<a href="#" id="trata_cuatro">
+  <img src="imagenes/LimpiezaDental.png" alt=""
+/></a>
+<div class="nombre_servicio">
+  <h4>Coronas</h4>
+</div>
+</div>
+<div class="item_servicios">
+<a href="#" id="trata_cinco">
+  <img src="imagenes/Ortodoncia_n.png" alt=""
+/></a>
+<div class="nombre_servicio">
+  <h4>Cirugía Bucal</h4>
+</div>
+</div>
+<div class="item_servicios">
+<a href="#" id="trata_seis"
+  ><img src="imagenes/CirugiaImplantes.png" alt=""
+/></a>
+<div class="nombre_servicio">
+  <h4>Operatoria Dental</h4>
+</div>
+</div>
+`
 
-
-tratamientoUno.addEventListener("click", function(){
-    modalTexto.classList.add('move_texto');
-    textoUno.classList.add('aparecer_texto_dos');
-})
-tratamientoDos.addEventListener("click", function(){
-    modalTexto.classList.add('move_texto');
-    textoDos.classList.add('aparecer_texto_dos');
-})
-tratamientoTres.addEventListener("click", function(){
-    modalTexto.classList.add('move_texto');
-    textoTres.classList.add('aparecer_texto_dos');
-})
-tratamientoCuatro.addEventListener("click", function(){
-    modalTexto.classList.add('move_texto');
-    textoCuatro.classList.add('aparecer_texto_dos');
-})
-tratamientoCinco.addEventListener("click", function(){
-    modalTexto.classList.add('move_texto');
-    textoCinco.classList.add('aparecer_texto_dos');
-})
-tratamientoSeis.addEventListener("click", function(){
-    modalTexto.classList.add('move_texto');
-    textoSeis.classList.add('aparecer_texto_dos');
-})
-tratamientoSiete.addEventListener("click", function(){
-    modalTexto.classList.add('move_texto');
-    textoSiete.classList.add('aparecer_texto_dos');
-})
-tratamientoOcho.addEventListener("click", function(){
-    modalTexto.classList.add('move_texto');
-    textoOcho.classList.add('aparecer_texto_dos');
-})
-tratamientoNueve.addEventListener("click", function(){
-    modalTexto.classList.add('move_texto');
-    textoNueve.classList.add('aparecer_texto_dos');
+more.addEventListener('click', () => {
+  container.insertAdjacentHTML("beforeend", services)
+  more.style.display = 'none'
+  less.style.display = 'block'
 })
 
-tratamientoDiez.addEventListener("click", function(){
-    modalTexto.classList.add('move_texto');
-    textoDiez.classList.add('aparecer_texto_dos');
+less.addEventListener('click', () => {
+  container.scrollIntoView({ block: 'start', behavior: 'smooth' })
+  container.innerHTML = ''
+  container.insertAdjacentHTML('afterbegin', original)
+  more.style.display = 'block'
+  less.style.display = 'none'
 })
-
-tratamientoOnce.addEventListener("click", function(){
-    modalTexto.classList.add('move_texto');
-    textoOnce.classList.add('aparecer_texto_dos');
-})
-
-
-
-    cerrarModal.addEventListener('click', function(){
-        modalTexto.classList.remove('move_texto');
-    textoUno.classList.remove('aparecer_texto_dos');
-    textoDos.classList.remove('aparecer_texto_dos');
-        textoTres.classList.remove('aparecer_texto_dos');
-        textoCuatro.classList.remove('aparecer_texto_dos');
-        textoCinco.classList.remove('aparecer_texto_dos');
-        textoSeis.classList.remove('aparecer_texto_dos');
-        textoSiete.classList.remove('aparecer_texto_dos');
-        textoOcho.classList.remove('aparecer_texto_dos');
-        textoNueve.classList.remove('aparecer_texto_dos');
-        textoDiez.classList.remove('aparecer_texto_dos');
-        textoOnce.classList.remove('aparecer_texto_dos');
-     
-     
-
-    })
-    
