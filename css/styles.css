@@ -15,6 +15,7 @@
   padding: 0;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 body {
   width: 100%;
@@ -55,7 +56,7 @@ header {
 
   -ms-flex-align: center;
   align-items: center;
-  background: var(--greenW-200);
+  background: white;
 }
 .menu-bar {
   display: none;
@@ -78,7 +79,7 @@ header {
 #spn3 {
   position: absolute;
   content: "";
-  background: #fff;
+  background: black;
   width: 50px;
   height: 5px;
   top: 0;
@@ -168,7 +169,7 @@ header {
   overflow: hidden;
   /*margin: auto;*/
   margin: 20px auto 20px auto;
-  /*background-image: url(../imagenes/fondoatras.png);*/
+  background-image: url(../imagenes/fondoatras.png);
   background-size: cover;
 }
 .miSlider img {
@@ -678,13 +679,12 @@ header {
   font-weight: bold;
   text-align: center;
   margin-bottom: 20px;
-  color: #cbc71b;
+  color: var(--blue-100);
   font-size: 40px;
   font-weight: bold;
   text-align: center;
   display: block;
   width: 85%;
-  background-color: #002c89;
   margin: 50px auto 20px auto;
   padding: 7px 0px;
   border-radius: 15px;
@@ -695,11 +695,11 @@ header {
 }
 .payment_list {
   width: 100%;
-  height: 1300px;
+  height: 750px;
   position: relative;
   background-image: url(../imagenes/fondo_pago.png);
   background-size: cover;
-  background-position: center;
+  background-position: top center;
   background-repeat: no-repeat;
 }
 .img_movil {
@@ -788,7 +788,7 @@ header {
 }
 .section_formulario {
   width: 100%;
-  background-color: #002c89;
+  background-color: var(--blue-200);
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   position: relative;
@@ -841,7 +841,7 @@ header {
   margin-bottom: 20px;
 }
 .item_formulario:nth-child(1) h5 {
-  color: #05a6e1;
+  color: white;
   font-size: 25px;
   margin-bottom: 15px;
 }
@@ -870,11 +870,18 @@ form button {
   width: 30%;
   text-align: center;
   padding: 15px;
-  background: #05a6e1;
+  background: white;
   border: none;
-  color: #fff;
+  color: #000;
   font-size: 20px;
   font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s linear;
+}
+form button:hover {
+  transition: all 0.2s linear;
+  background-color: #000;
+  color: white;
 }
 .item_formulario:nth-child(2) {
   display: -webkit-box;
@@ -919,7 +926,7 @@ form button {
 }
 .container_ubiacion {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(1, 1fr);
   gap: 30px;
   width: 90%;
   margin: auto;
@@ -928,7 +935,7 @@ form button {
 .item_mapa:nth-child(1) {
   position: relative;
   overflow: hidden;
-  padding-top: 56.25%;
+  padding-top: 40%;
 }
 .item_mapa:nth-child(1) iframe {
   position: absolute;
@@ -936,6 +943,7 @@ form button {
   left: 0;
   width: 100%;
   height: 100%;
+  max-height: 500px;
 }
 .item_mapa:nth-child(2) {
   margin: auto;
@@ -1061,7 +1069,35 @@ footer {
   animation-iteration-count: 5;
   transform-origin: right;
 }
-
+.container-promociones {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  place-content: center;
+  place-items: center;
+  gap: 20px;
+  padding: 25px 0;
+}
+.promo-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.promo-item img {
+  width: 100%;
+}
+.promo-item a {
+  padding: 10px 15px;
+  background-color: white;
+  color: black;
+  text-decoration: none;
+  transition: all 0.2s linear;
+}
+.promo-item a:hover {
+  transition: all 0.2s linear;
+  background-color: #000;
+  color: white;
+}
 @keyframes crecer {
   0% {
     transform: scaleX(0);
@@ -1195,6 +1231,47 @@ footer {
 }
 
 /*fin de estilos tratamientos */
+.flotantes {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+}
+.flotantes img {
+  width: 80px;
+  height: auto;
+  padding: 10px 20px;
+  background-color: #002c89;
+  border-radius: 50%;
+  z-index: 999;
+}
+.flotantes a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  transition: all 0.2s linear;
+}
+.flotantes a svg {
+  width: 30px;
+  fill: white;
+}
+.flotantes a:nth-child(1) {
+  background-color: #41E06C;
+  margin-bottom: 15px;
+}
+.flotantes a:nth-child(1):hover {
+  background-color: #07e242;
+  transition: all 0.2s linear;
+}
+.flotantes a:nth-child(2) {
+  background-color: #009ec0;
+}
+.flotantes a:nth-child(2):hover {
+  background-color: #05cffc;
+  transition: all 0.2s linear;
+}
 .container {
   display: flex;
   justify-content: center;
@@ -1233,10 +1310,14 @@ footer {
   line-height: 1.5rem;
 }
 .bg-color {
-  background-color: var(--green-100);
+  background-color: gray;
 }
 .bg-color img {
   margin-bottom: 30px;
+}
+.bg-color > h2 {
+  color: white;
+  margin-top: 20px;
 }
 .nosotros-container a {
   display: flex;
@@ -1284,6 +1365,35 @@ footer {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+  }
+  .bg-color > h2 {
+    font-size: 2.5rem;
+  }
+  .radio {
+    margin-right: 40px;
+    margin-left: 0;
+  }
+  .radio p {
+    font-size: 1.4rem;
+    line-height: 1.5rem;
+  }
+  .txt strong {
+    font-size: 2rem !important;
+  }
+  .txt ul {
+    margin-top: 20px;
+    font-size: 1.2rem;
+  }
+  .container-radio {
+    display: grid !important;
+    grid-template-columns: repeat(3, 1fr);
+    place-content: center;
+    place-items: center;
+  }
+  .container-promociones {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(450px, 500px));
+    gap: 40px;
   }
 }
 @media (max-width: 767px) {
@@ -1627,7 +1737,7 @@ footer {
 
   .payment_list {
     width: 100%;
-    height: 850px;
+    height: 500px;
     position: relative;
     background-image: none;
     background-size: cover;

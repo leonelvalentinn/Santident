@@ -44,6 +44,10 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
     />
     <link rel="stylesheet" href="aos/aos.css" />
+    <link
+    rel="stylesheet"
+    href="https://unpkg.com/swiper/swiper-bundle.min.css"
+  />
     <script src="aos/aos.js"></script>
     <!-- Código de analytics  -->
     <script
@@ -124,12 +128,56 @@
       });
     </script>
     <!-- Fin de Código de adds teléfono   -->
+    <style>
+      .swiper {
+        width: 90%;
+        height: 100%;
+        margin: 40px 0px 30px 0px;
+      }
+
+      .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+
+        /* Center slide text vertically */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+      }
+
+      .swiper-slide img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+      .swiper-pagination {
+        position: relative;
+        margin-top: 15px;
+      }
+      .swiper-pagination .swiper-pagination-bullet {
+        height: 7px;
+        width: 27px;
+        background-color: var(--blue-100);
+        border-radius: 20px;
+      }
+    </style>
   </head>
   <body>
     <header>
       <div class="item_header">
-        <p><a href="tel:6012731655" target="_blank">Agenda tu cita</a></p>
-        <p><a href="tel:6012731655" target="_blank">Teléfono: 6012731655</a></p>
+        <p><a href="https://wa.me/524531331633?text=Buenas%20tardes,%20solicito%20informaci%C3%B3n%20sobre" target="_blank">Agenda tu cita</a></p>
+        <p><a href="tel:4531331633" target="_blank">Teléfono: 4531331633</a></p>
       </div>
       <nav class="navegador">
         <div class="menu-bar">
@@ -147,8 +195,8 @@
         </div>
         <ul class="menu">
           <li><a href="index.html" class="menu_links">Inicio</a></li>
-          <li><a href="nosotros.html" class="menu_links">Nosotros</a></li>
-          <li><a href="promociones.html" class="menu_links">Promociones</a></li>
+          <li><a href="#nosotros" class="menu_links">Nosotros</a></li>
+          <li><a href="#promociones" class="menu_links">Promociones</a></li>
           <!--<li>
             <a
               href="https://api.whatsapp.com/send?phone=573204966930"
@@ -160,25 +208,16 @@
           <li><a href="#servicios" class="menu_links">Tratamientos</a></li>
 
           <li><a href="#ubicacion" class="menu_links">Ubicación</a></li>
-          <li><a href="#contactodos" class="menu_links">Contacto</a></li>
+          <li><a href="https://wa.me/524531331633?text=Buenas%20tardes,%20solicito%20informaci%C3%B3n%20sobre" class="menu_links">Contacto</a></li>
         </ul>
       </nav>
     </header>
     <div class="slide_contenedor">
       <div class="miSlider fade">
-        <img src="imagenes/blanqueamiento-promo-baquero.jpg" alt="" />
+        <img src="imagenes/promociones/promo-1.png" alt="" />
       </div>
       <div class="miSlider fade">
-        <img src="imagenes/coronas-promo-baquero.jpg" alt="" />
-      </div>
-      <div class="miSlider fade">
-        <img src="imagenes/limpieza-promo-baquero.jpg" alt="" />
-      </div>
-      <div class="miSlider fade">
-        <img src="imagenes/slider-5.jpg" alt="" />
-      </div>
-      <div class="miSlider fade">
-        <img src="imagenes/slider-6.png" alt="" />
+        <img src="imagenes/promociones/promo-2.jpg" alt="" />
       </div>
       <div class="direcciones">
         <a href="#" class="atras" onclick="avanzaSlide(-1)">&#10094;</a>
@@ -187,13 +226,10 @@
       <div class="barras">
         <span class="barra active" onclick="posicionSlide(1)"></span>
         <span class="barra" onclick="posicionSlide(2)"></span>
-        <span class="barra" onclick="posicionSlide(3)"></span>
-        <span class="barra" onclick="posicionSlide(4)"></span>
-        <span class="barra" onclick="posicionSlide(5)"></span>
       </div>
     </div>
     <!--Nosotros-->
-    <section class="container">
+    <section class="container" id="nosotros">
       <div class="nosotros-container">
         <div class="txt">
           <h1>Santident Clínica Dental</h1>
@@ -205,15 +241,15 @@
     </section>
     <!--Fin Nosotros-->
     <!--Nosotros-->
-    <section class="container">
-      <div class="nosotros-container bg-color">
+    <section class="container bg-color">
+      <div class="nosotros-container">
         <img src="imagenes/nosotros/nosotros-2.jpg" alt="Equipo Santident">
         <div class="txt">
           <h2>Somos una clínica con tecnología e innovación</h2>
           <p>
             En Santident, nos enorgullece ofrecer tratamientos dentales actuales que incorporan los avances más recientes en el campo odontológico. Nos comprometemos a proporcionar servicios de calidad, respaldados por un equipo de profesionales altamente capacitados y comprometidos con la excelencia en cada paso del proceso.
             La calidad, el profesionalismo y la seriedad son los pilares fundamentales que guían nuestro enfoque en la atención dental. Buscamos superar las expectativas de nuestros pacientes al ofrecer no solo tratamientos eficaces, sino también una experiencia integral de atención de primera calidad. Cada miembro de nuestro equipo se esfuerza por garantizar que los pacientes se sientan cómodos, informados y respaldados en todo momento.</p>
-          <a href="nosotros.html" rel="noopener noreferrer">Conoce más</a>
+          <a href="https://wa.me/524531331633?text=Buenas%20tardes,%20solicito%20informaci%C3%B3n%20sobre" rel="noopener noreferrer">Agenda tu cita</a>
         </div>
       </div>
     </section>
@@ -222,48 +258,48 @@
       <h2>TRATAMIENTOS</h2>
       <div class="servicios" id="container-tratamientos">
         <div class="item_servicios">
-          <a href="#" id="trata_uno"
-            ><img src="imagenes/bichectomia.png" alt=""
+          <a href="https://wa.me/524531331633?text=Buenas%20tardes,%20solicito%20informaci%C3%B3n%20sobre" id="trata_uno"
+            ><img src="imagenes/rayos-x.png" alt=""
           /></a>
           <div class="nombre_servicio">
             <h4>Radiología Dental</h4>
           </div>
         </div>
         <div class="item_servicios">
-          <a href="#" id="trata_dos"
-            ><img src="imagenes/exodoncia-dental.png" alt=""
+          <a href="https://wa.me/524531331633?text=Buenas%20tardes,%20solicito%20informaci%C3%B3n%20sobre" id="trata_dos"
+            ><img src="imagenes/tirantes.png" alt=""
           /></a>
           <div class="nombre_servicio">
             <h4>Ortodoncia Dental</h4>
           </div>
         </div>
         <div class="item_servicios">
-          <a href="#" id="trata_tres">
-            <img src="imagenes/BlanqueamientoDental.png" alt=""
+          <a href="https://wa.me/524531331633?text=Buenas%20tardes,%20solicito%20informaci%C3%B3n%20sobre" id="trata_tres">
+            <img src="imagenes/endodoncia.png" alt=""
           /></a>
           <div class="nombre_servicio">
             <h4>Endodoncia Avanzada</h4>
           </div>
         </div>
         <div class="item_servicios">
-          <a href="#" id="trata_cuatro">
-            <img src="imagenes/LimpiezaDental.png" alt=""
+          <a href="https://wa.me/524531331633?text=Buenas%20tardes,%20solicito%20informaci%C3%B3n%20sobre" id="trata_cuatro">
+            <img src="imagenes/corona-dental.png" alt=""
           /></a>
           <div class="nombre_servicio">
             <h4>Coronas</h4>
           </div>
         </div>
         <div class="item_servicios">
-          <a href="#" id="trata_cinco">
-            <img src="imagenes/Ortodoncia_n.png" alt=""
+          <a href="https://wa.me/524531331633?text=Buenas%20tardes,%20solicito%20informaci%C3%B3n%20sobre" id="trata_cinco">
+            <img src="imagenes/cirugia-dental.png" alt=""
           /></a>
           <div class="nombre_servicio">
             <h4>Cirugía Bucal</h4>
           </div>
         </div>
         <div class="item_servicios">
-          <a href="#" id="trata_seis"
-            ><img src="imagenes/CirugiaImplantes.png" alt=""
+          <a href="https://wa.me/524531331633?text=Buenas%20tardes,%20solicito%20informaci%C3%B3n%20sobre" id="trata_seis"
+            ><img src="imagenes/diente.png" alt=""
           /></a>
           <div class="nombre_servicio">
             <h4>Operatoria Dental</h4>
@@ -354,7 +390,7 @@
       <button id="more">Ver más</button>
       <button id="less">Ver menos</button>
     </div>
-    <div class="container_tratamientos">
+    <!--<div class="container_tratamientos">
       <i class="far fa-times-circle" id="cerrarTratamientos"></i>
       <div class="copy_nuevo" id="texto_uno">
         <h2>BICHECTOMÍA</h2>
@@ -542,8 +578,425 @@
           -Resina propiamente dicha
         </p>
       </div>
-    </div>
+    </div>-->
+    <section class="container bg-color" style="flex-direction: column; padding: 60px 0;">
+      <h2 style="margin-bottom: 15px;">Radiología Dental</h2>
+      <div class="nosotros-container container-radio" style="max-width: 1400px !important;">
+        <div class="txt radio">
+          <p style="text-align: justify; color: white;">
+            En nuestro centro, contamos con la mejor tecnología disponible para realizar radiografías dentales de todo tipo. Nuestro equipo está equipado con los últimos avances en tecnología radiológica, lo que nos permite obtener imágenes precisas y detalladas de la boca y los dientes de nuestros pacientes.
+          </p>
+        </div>
+        <img src="imagenes/radiografia.jpg" alt="Equipo Santident" style="max-width: 450px !important; border-radius: 10px;">
+        <div class="txt">
+          <p><strong style="color: white; font-size: 1.4rem;">Contamos con radiografías:</strong></p>
+          <ul style="color: white;">
+            <li>Periapical</li>
+            <li>Panoramica</li>
+            <li>Lateral de cráneo</li>
+            <li>AP Anteroposterior</li>
+            <li>PA Posteroanterior</li>
+            <li>ºA.T.M. Boca abierta y Boca cerrada</li>
+            <li>Carpal</li>
+            <li>Waters</li>
+            <li>Caldwell</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section class="doctores">
+      <h2>Opiniones de Nuestros Pacientes</h2>
+      <!-- Swiper -->
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide card_nosotros card_opinion">
+            <div class="card-content">
+              <div class="image">
+                <img src="imagenes/nosotros/olga-calderon.png" alt="" />
+              </div>
+              <div class="name-profesion">
+                <span class="name">Olga Calderon</span>
+              </div>
+              <div class="rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+              <div class="btn_conoce">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde facilis cumque quasi architecto, hic modi dolor ipsum tempore soluta perspiciatis id sequi fugiat maiores deserunt esse quia quod nemo ipsa?</p>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide card_nosotros card_opinion">
+            <div class="card-content">
+              <div class="image">
+                <img src="imagenes/nosotros/olga-calderon.png" alt="" />
+              </div>
+              <div class="name-profesion">
+                <span class="name">Olga Calderon</span>
+              </div>
+              <div class="rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+              <div class="btn_conoce">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde facilis cumque quasi architecto, hic modi dolor ipsum tempore soluta perspiciatis id sequi fugiat maiores deserunt esse quia quod nemo ipsa?</p>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide card_nosotros card_opinion">
+            <div class="card-content">
+              <div class="image">
+                <img src="imagenes/nosotros/olga-calderon.png" alt="" />
+              </div>
+              <div class="name-profesion">
+                <span class="name">Olga Calderon</span>
+              </div>
+              <div class="rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+              <div class="btn_conoce">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde facilis cumque quasi architecto, hic modi dolor ipsum tempore soluta perspiciatis id sequi fugiat maiores deserunt esse quia quod nemo ipsa?</p>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide card_nosotros card_opinion">
+            <div class="card-content">
+              <div class="image">
+                <img src="imagenes/nosotros/olga-calderon.png" alt="" />
+              </div>
+              <div class="name-profesion">
+                <span class="name">Olga Calderon</span>
+              </div>
+              <div class="rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+              <div class="btn_conoce">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde facilis cumque quasi architecto, hic modi dolor ipsum tempore soluta perspiciatis id sequi fugiat maiores deserunt esse quia quod nemo ipsa?</p>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide card_nosotros card_opinion">
+            <div class="card-content">
+              <div class="image">
+                <img src="imagenes/nosotros/olga-calderon.png" alt="" />
+              </div>
+              <div class="name-profesion">
+                <span class="name">Olga Calderon</span>
+              </div>
+              <div class="rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+              <div class="btn_conoce">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde facilis cumque quasi architecto, hic modi dolor ipsum tempore soluta perspiciatis id sequi fugiat maiores deserunt esse quia quod nemo ipsa?</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+      </div>
 
+      <!-- Swiper JS -->
+      <div class="container_texto">
+        <i onclick="cerrarTexto()" class="far fa-times-circle" id="cierro"></i>
+        <div class="copy" id="copy_uno">
+          <h2>Elizabeth Baquero</h2>
+          <p>
+            Especialista en ortopedia funcional y ortodoncia; de más de 30 años
+            de experiencia. Con diplomados nacionales e internacionales en
+            Rehabilitación sobre implantes, Estética y diseño de sonrisa; así
+            como de técnicas actuales de Ortodoncia como la Ortodoncia
+            invisible.
+          </p>
+        </div>
+        <div class="copy" id="copy_dos">
+          <h2>Paula Fernández</h2>
+          <p>
+            Odontóloga general, con diplomado en Odontología digital y estética.
+            Con conocimientos en prevención, diagnóstico y tratamiento de
+            enfermedades bucodentales y habilidades en la práctica clínica para
+            ofrecer un servicio odontológico integral.
+          </p>
+        </div>
+        <div class="copy" id="copy_tres">
+          <h2>Olga Calderón</h2>
+          <p>
+            Odontóloga general Experiencia clínica de 25 años, con diplomados en
+            estética dental y diseño de sonrisa.
+          </p>
+        </div>
+        <div class="copy" id="copy_cuatro">
+          <h2>Enyya Leonel</h2>
+          <p>
+            Especialista en Patología y Cirugía bucal, con 12 años de
+            experiencia y formación basada en diagnosticar, pronosticar,
+            prevenir y rehabilitar las alteraciones bucales con una orientación
+            a la población infantil y adulta.
+          </p>
+        </div>
+        <div class="copy" id="copy_cinco">
+          <h2>Pilar Pachon</h2>
+          <p>
+            Especialista en Semiología y Cirugía oral. Experiencia clínica de 26
+            años, con conocimiento teórico y práctico en alteraciones
+            dento-buco-maxilares y manejo integral del sistema estomatognático.
+          </p>
+        </div>
+        <div class="copy" id="copy_seis">
+          <h2>Sonia Barreto</h2>
+          <p>
+            Especialista en Endodoncia con más de 22 años de experiencia en
+            manejo de alteraciones pulgares y periapicales, teniendo en cuenta
+            los factores locales, generales y socioeconómicos de cada paciente.
+          </p>
+        </div>
+        <div class="copy" id="copy_siete">
+          <h2>Maicol Castro</h2>
+          <p>
+            Especialista en Endodoncia con 12 años de experiencia, dedicado
+            exclusivamente a resolver las y patologías de origen pulgar y
+            periapical.
+          </p>
+        </div>
+
+        <div class="copy" id="copy_ocho">
+          <h2>Katherin Peña</h2>
+          <p>
+            Especialista en ortodoncia y ortopedia dentofacial, de 5 años de
+            experiencia. Con diplomados en Ortodoncia invisible y actualizado en
+            el uso de aparatos y tecnologías para el tratamiento de ortodoncia.
+          </p>
+        </div>
+      </div>
+    </section>
+    <section class="doctores">
+      <h2>Nuestros Doctores</h2>
+      <!-- Swiper -->
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide card_nosotros">
+            <div class="card-content">
+              <div class="image">
+                <img src="imagenes/nosotros/olga-calderon.png" alt="" />
+              </div>
+              <div class="media-icons">
+                <i class="fab fa-facebook"></i>
+                <i class="fab fa-instagram-square"></i>
+                <i class="fab fa-tiktok"></i>
+              </div>
+              <div class="name-profesion">
+                <span class="name">Olga Calderon</span>
+                <span class="profesion">Odontologia General</span>
+              </div>
+              <div class="rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+              <div class="btn_conoce">
+                <a href="#" class="conoce_de_mi" id="conoceUno"
+                  >Conoce más de mí</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide card_nosotros">
+            <div class="card-content">
+              <div class="image">
+                <img src="imagenes/nosotros/olga-calderon.png" alt="" />
+              </div>
+              <div class="media-icons">
+                <i class="fab fa-facebook"></i>
+                <i class="fab fa-instagram-square"></i>
+                <i class="fab fa-tiktok"></i>
+              </div>
+              <div class="name-profesion">
+                <span class="name">Olga Calderon</span>
+                <span class="profesion">Odontologia General</span>
+              </div>
+              <div class="rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+              <div class="btn_conoce">
+                <a href="#" class="conoce_de_mi" id="conoceUno"
+                  >Conoce más de mí</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide card_nosotros">
+            <div class="card-content">
+              <div class="image">
+                <img src="imagenes/nosotros/olga-calderon.png" alt="" />
+              </div>
+              <div class="media-icons">
+                <i class="fab fa-facebook"></i>
+                <i class="fab fa-instagram-square"></i>
+                <i class="fab fa-tiktok"></i>
+              </div>
+              <div class="name-profesion">
+                <span class="name">Olga Calderon</span>
+                <span class="profesion">Odontologia General</span>
+              </div>
+              <div class="rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+              <div class="btn_conoce">
+                <a href="#" class="conoce_de_mi" id="conoceUno"
+                  >Conoce más de mí</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide card_nosotros">
+            <div class="card-content">
+              <div class="image">
+                <img src="imagenes/nosotros/olga-calderon.png" alt="" />
+              </div>
+              <div class="media-icons">
+                <i class="fab fa-facebook"></i>
+                <i class="fab fa-instagram-square"></i>
+                <i class="fab fa-tiktok"></i>
+              </div>
+              <div class="name-profesion">
+                <span class="name">Olga Calderon</span>
+                <span class="profesion">Odontologia General</span>
+              </div>
+              <div class="rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+              <div class="btn_conoce">
+                <a href="#" class="conoce_de_mi" id="conoceUno"
+                  >Conoce más de mí</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+      </div>
+
+      <!-- Swiper JS -->
+      <div class="container_texto">
+        <i onclick="cerrarTexto()" class="far fa-times-circle" id="cierro"></i>
+        <div class="copy" id="copy_uno">
+          <h2>Elizabeth Baquero</h2>
+          <p>
+            Especialista en ortopedia funcional y ortodoncia; de más de 30 años
+            de experiencia. Con diplomados nacionales e internacionales en
+            Rehabilitación sobre implantes, Estética y diseño de sonrisa; así
+            como de técnicas actuales de Ortodoncia como la Ortodoncia
+            invisible.
+          </p>
+        </div>
+        <div class="copy" id="copy_dos">
+          <h2>Paula Fernández</h2>
+          <p>
+            Odontóloga general, con diplomado en Odontología digital y estética.
+            Con conocimientos en prevención, diagnóstico y tratamiento de
+            enfermedades bucodentales y habilidades en la práctica clínica para
+            ofrecer un servicio odontológico integral.
+          </p>
+        </div>
+        <div class="copy" id="copy_tres">
+          <h2>Olga Calderón</h2>
+          <p>
+            Odontóloga general Experiencia clínica de 25 años, con diplomados en
+            estética dental y diseño de sonrisa.
+          </p>
+        </div>
+        <div class="copy" id="copy_cuatro">
+          <h2>Enyya Leonel</h2>
+          <p>
+            Especialista en Patología y Cirugía bucal, con 12 años de
+            experiencia y formación basada en diagnosticar, pronosticar,
+            prevenir y rehabilitar las alteraciones bucales con una orientación
+            a la población infantil y adulta.
+          </p>
+        </div>
+        <div class="copy" id="copy_cinco">
+          <h2>Pilar Pachon</h2>
+          <p>
+            Especialista en Semiología y Cirugía oral. Experiencia clínica de 26
+            años, con conocimiento teórico y práctico en alteraciones
+            dento-buco-maxilares y manejo integral del sistema estomatognático.
+          </p>
+        </div>
+        <div class="copy" id="copy_seis">
+          <h2>Sonia Barreto</h2>
+          <p>
+            Especialista en Endodoncia con más de 22 años de experiencia en
+            manejo de alteraciones pulgares y periapicales, teniendo en cuenta
+            los factores locales, generales y socioeconómicos de cada paciente.
+          </p>
+        </div>
+        <div class="copy" id="copy_siete">
+          <h2>Maicol Castro</h2>
+          <p>
+            Especialista en Endodoncia con 12 años de experiencia, dedicado
+            exclusivamente a resolver las y patologías de origen pulgar y
+            periapical.
+          </p>
+        </div>
+
+        <div class="copy" id="copy_ocho">
+          <h2>Katherin Peña</h2>
+          <p>
+            Especialista en ortodoncia y ortopedia dentofacial, de 5 años de
+            experiencia. Con diplomados en Ortodoncia invisible y actualizado en
+            el uso de aparatos y tecnologías para el tratamiento de ortodoncia.
+          </p>
+        </div>
+      </div>
+    </section>
+    <section class="container bg-color" style="background-color: var(--blue-100) !important; flex-direction: column;" id="promociones">
+      <h2>Promociones</h2>
+      <div class="container-promociones">
+        <div class="promo-item">
+          <img src="imagenes/promociones/promo-1.png" alt="Promocion">
+          <a href="https://api.whatsapp.com/send?phone=524531331633" target="_blank" rel="noopener noreferrer">Agenda tu cita</a>
+        </div>
+        <div class="promo-item">
+          <img src="imagenes/promociones/promo-1.png" alt="Promocion">
+          <a href="https://api.whatsapp.com/send?phone=524531331633" target="_blank" rel="noopener noreferrer">Agenda tu cita</a>
+        </div>
+      </div>
+    </section>
     <section class="forma_de_pago" id="pago">
       <h2>FACILIDADES DE PAGO</h2>
       <div class="payment_list">
@@ -559,22 +1012,9 @@
               <a href="#" class="nav__link">TARJETA DE CRÉDITO Y DÉBITO </a>
             </div>
           </li>
-
-          <li class="list__item">
-            <div class="list__button list__button--click">
-              <a href="#" class="nav__link">PayPal</a>
-            </div>
-          </li>
-
           <li class="list__item">
             <div class="list__button list__button--click">
               <a href="#" class="nav__link">TRANSFERENCIA</a>
-            </div>
-          </li>
-
-          <li class="list__item">
-            <div class="list__button list__button--click">
-              <a href="#" class="nav__link">SISTECREDITO</a>
             </div>
           </li>
         </ul>
@@ -583,14 +1023,14 @@
     <div class="section_formulario" id="contactodos">
       <div class="item_formulario">
         <h4>CONTÁCTENOS</h4>
-        <h5>¿ TE LLAMAMOS ?</h5>
+        <h5>¿TE LLAMAMOS?</h5>
         <p>
-          Deja tus datos de contacto y uno de <br />
+          Dejanos tus datos de contacto y uno de <br />
           nuestros expertos se comunicará contigo.
         </p>
         <img src="imagenes/contacto.png" alt="" />
         <form action="email.php" method="POST">
-          <label for="Name">Hola! mi nombre es:</label>
+          <label for="Name">Hola, mi nombre es:</label>
           <input type="text" id="Name" name="Name" required/> <br />
           <label for="tratamiento">Estoy interesado(a) en</label>
           <select name="Tratamiento" id="Tratamiento" required>
@@ -598,7 +1038,7 @@
             <option>Endodoncia</option>
             <option>Ortodoncia</option>
             <option>Periodoncia</option>
-            <option>Odontopediatría</option>
+            <option>Radiografías</option>
             <option>Prótesis bucal</option>
             <option>Implantes</option>
             <option>Cirugía láser</option>
@@ -618,69 +1058,31 @@
         <img src="imagenes/chica_contacto.png" alt="" class="chica" />
       </div>
 
-      <a href="https://api.whatsapp.com/send?phone=573204966930" target="_blank"
+      <a href="https://api.whatsapp.com/send?phone=524531331633" target="_blank"
         ><img src="imagenes/boton_contacto.png" alt="" class="btn-contacto"
       /></a>
     </div>
-    <div class="mapa" id="ubicacion">
-      <h2>Nuestras ubicaciones</h2>
+    <div class="mapa" >
+      <h2 id="ubicacion">Ubicación</h2>
       <p>Horarios:</p>
-      <p>Lunes a Viernes de 8:00 a 19:00</p>
-      <p>Sábados de 8:00 a 16:00</p>
+      <p>Lunes a Viernes de 9:00 a 19:00</p>
+      <p>Sábados de 9:00 a 14:00</p>
+      <p>avenida, Gral. Rentería Luviano Nte. #1395, 60630 Apatzingán de la Constitución, Mich.</p>
       <div class="container_ubiacion">
         <div class="item_ubicacion">
           <div class="item_mapa">
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3976.831495530669!2d-74.14
-        387018573684!3d4.624134243605492!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f9ea14cd063
-        89%3A0x7f672924d6129c85!2sCra.%2073%20%231-69%2C%20Bogot%C3%A1%2C%20Colombia!5e0!3m2!1ses-419!2smx!4v1643045078668!5m2!1ses-419!2smx"
-              width="800"
-              height="600"
-              style="border: 0"
-              allowfullscreen=""
-              loading="lazy"
-            ></iframe>
-          </div>
-        </div>
-        <div class="item_ubicacion">
-          <div class="item_mapa">
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3976.4957302992234!2d-74.0498723857368!3d4.683562543111234!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f9a95d53f5e4b%3A0xcae41184315ffdd6!2sCra.%2014%20%2398-95%2C%20Localidad%20de%20Chapinero%2C%20Bogot%C3%A1%2C%20Colombia!5e0!3m2!1ses-419!2smx!4v1676995571036!5m2!1ses-419!2smx"
-              width="800"
-              height="600"
-              style="border: 0"
-              allowfullscreen=""
-              loading="lazy"
-              referrerpolicy="no-referrer-when-downgrade"
-            ></iframe>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3358.7040656674026!2d-102.34918279748668!3d19.106870774735498!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8431e1de671f0035%3A0x2a95516d1acd85ac!2sClinica%20Dental%20Santident!5e0!3m2!1ses-419!2smx!4v1707776514719!5m2!1ses-419!2smx" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
           </div>
         </div>
       </div>
 
-      <div class="redes_flotantes">
-        <img src="imagenes/btn_principal.png" alt="" class="icono_principal" />
-        <div class="contacto">
-          <p>¡Da Click y contáctenos!</p>
-        </div>
-
-        <div class="contactos">
-          <a
-            href="https://api.whatsapp.com/send?phone=5712731655"
-            class="icono_dos"
-            target="_blank"
-            ><img src="imagenes/whats.png" alt=""
-          /></a>
-          <a href="tel:6012731655" class="icono_dos" target="_blank"
-            ><img src="imagenes/phone.png" alt=""
-          /></a>
-
-          <a
-            href="https://goo.gl/maps/3qJu7kPvmUWxeKTn7"
-            class="icono_dos"
-            target="_blank"
-            ><img src="imagenes/ubicacion.png" alt=""
-          /></a>
-        </div>
+      <div class="flotantes">
+        <a href="https://api.whatsapp.com/send?phone=524531331633" target="_blank">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7 .9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z"/></svg>
+        </a>
+        <a href="tel:4531331633">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M164.9 24.6c-7.7-18.6-28-28.5-47.4-23.2l-88 24C12.1 30.2 0 46 0 64C0 311.4 200.6 512 448 512c18 0 33.8-12.1 38.6-29.5l24-88c5.3-19.4-4.6-39.7-23.2-47.4l-96-40c-16.3-6.8-35.2-2.1-46.3 11.6L304.7 368C234.3 334.7 177.3 277.7 144 207.3L193.3 167c13.7-11.2 18.4-30 11.6-46.3l-40-96z"/></svg>
+        </a>
       </div>
     </div>
     <footer>
@@ -689,13 +1091,6 @@
         <ul>
           <li><a href="nosotros.html">Nosotros</a></li>
           <li><a href="promociones.html">Promociones</a></li>
-          <li>
-            <a
-              href="https://api.whatsapp.com/send?phone=5712731655"
-              target="_blank"
-              >Urgencias</a
-            >
-          </li>
           <li><a href="#servicios">Tratamientos</a></li>
           <li><a href="#ubicacion">Ubicación</a></li>
         </ul>
@@ -704,13 +1099,6 @@
         <h4 class="list__button--click">ESPECIALIDADES Y TRATAMIENTOS</h4>
         <div class="sub_item">
           <ul>
-            <li>
-              <a
-                href="https://api.whatsapp.com/send?phone=5712731655"
-                target="_blank"
-                >Urgencias dentales</a
-              >
-            </li>
             <li><a href="#servicios">Blanqueamiento dental</a></li>
             <li><a href="#servicios">Limpieza dental</a></li>
             <li><a href="#todo">Ortodoncia</a></li>
@@ -728,21 +1116,21 @@
         <ul>
           <li>
             <a
-              href="https://www.facebook.com/dentosaludcolombia/"
+              href="https://www.facebook.com/profile.php?id=100063892245899"
               target="_blank"
               ><i class="fab fa-facebook-f"></i
             ></a>
           </li>
           <li>
             <a
-              href="https://www.instagram.com/odontologiaelizabethbaquero/?utm_medium=copy_link"
+              href="https://www.tiktok.com/@dr.ulisesmaldonado"
               target="_blank"
-              ><i class="fab fa-instagram"></i
+              ><i class="fab fa-tiktok"></i
             ></a>
           </li>
           <li>
             <a
-              href="https://api.whatsapp.com/send?phone=5712731655"
+              href="https://api.whatsapp.com/send?phone=524531331633"
               target="_blank"
               ><i class="fab fa-whatsapp"></i
             ></a>
@@ -762,7 +1150,7 @@
           <a href="https://dentarios.com.mx/programacion.php" target="_blank">
             Agencia de Marketing Dentarios</a
           >
-          © 2022
+          © 2024
         </p>
       </div>
     </footer>
@@ -771,11 +1159,44 @@
     <script src="js/index.js"></script>
     <script src="js/slider.js"></script>
     <script src="js/pago.js"></script>
-    <script src="js/card.js"></script>
-    <script src="js/nosotros.js"></script>
 
     <script>
       AOS.init();
+    </script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 1,
+        spaceBetween: 30,
+        slidesPerGroup: 1,
+        loop: true,
+        loopFillGroupWithBlank: true,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        breakpoints: {
+          // when window width is >= 320px
+          320: {
+            slidesPerView: 1,
+            slidesPerGroup: 1,
+          },
+          // when window width is >= 480px
+          480: {
+            slidesPerView: 1,
+            slidesPerGroup: 3,
+          },
+          // when window width is >= 640px
+          640: {
+            slidesPerView: 3,
+            slidesPerGroup: 1,
+          },
+        },
+      });
     </script>
     <?php
     include("email.php");

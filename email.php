@@ -13,11 +13,11 @@
   $mensaje .= "Mensaje enviado el " .date('d/m/Y', time());
 
   //destinatario
-  $destinatario = 'elizabeth.baquero@odontologiaelizabethbaquero.com';
+  $destinatario = 'linoulises.maldonadoMICH@gmail.com';
   $asunto = "Solicito información sobre " . $tratamiento;
   
   //enviar email
-  $header = "Email enviado desde Odontología Elizabeth Baquero";
+  $header = "Email enviado desde Santident";
   $mail = mail($destinatario, $asunto, $mensaje, $header);
 
   if($mail) {
