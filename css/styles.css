@@ -3,12 +3,14 @@
 @import url("promociones.css");
 
 :root {
-  --blue-100: #4184E0;
-  --blue-200: #2596BE;
-  --green-100: #41E0A2;
+  --blue-100: #004FFF;
+  --blue-200: #001A23;
+  --green-100: #48E5C2;
   --green-200: #41E06C;
   --greenW-100: #8CE0DC;
   --greenW-200: #41E0D8;
+
+
 }
 * {
   margin: 0;
@@ -29,7 +31,7 @@ header {
 }
 .item_header {
   width: 100%;
-  background: var(--blue-100);
+  background: var(--blue-200);
   height: 60px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -41,7 +43,7 @@ header {
 .item_header p a {
   color: #fff;
   font-size: 22px;
-  text-transform: uppercase;
+  
   text-decoration: none;
 }
 .navegador {
@@ -53,7 +55,7 @@ header {
   -ms-flex-pack: justify;
   justify-content: space-between;
   -webkit-box-align: center;
-
+  max-width: 1600px;
   -ms-flex-align: center;
   align-items: center;
   background: white;
@@ -113,7 +115,7 @@ header {
   top: 10px;
 }
 .logo_nav {
-  width: 20%;
+  width: 15%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -136,21 +138,29 @@ header {
   display: flex;
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
-  justify-content: space-evenly;
+  justify-content: end;
   width: 100%;
   padding-right: 0px;
   z-index: 50;
+  padding-right: 40px;
 }
 .menu li {
   list-style: none;
+  margin-left: 15px;
 }
 .menu li a {
   text-decoration: none;
   font-size: 20px;
-  color: var(--blue-100);
-  text-transform: uppercase;
+  color: black;
+  border-radius: 10px;
+  padding: 10px 15px;
   font-weight: 600;
   transition: all 0.2s linear;
+}
+.menu li a:hover {
+  background-color: var(--blue-200);
+  transition: all 0.2s linear;
+  color: white;
 }
 .menu li:hover > a {
   color: white;
@@ -236,7 +246,7 @@ header {
   width: 15px;
   border-radius: 50%;
   margin: 0 2px;
-  background-color: var(--blue-100);
+  background-color: var(--blue-200);
   display: inline-block;
   margin-bottom: 8px;
 }
@@ -287,7 +297,7 @@ header {
   padding: 20px 30px;
   border-radius: 5px;
   font-size: 19px;
-  text-transform: uppercase;
+  
 }
 .masuno {
   -webkit-animation: efecto1;
@@ -360,14 +370,14 @@ header {
   flex-direction: column;
 }
 .tratamientos h2 {
-  color: var(--blue-100);
+  color: var(--blue-200);
   font-size: 40px;
   font-weight: bold;
   text-align: center;
   margin-top: 20px;
 }
 .tratamientos h2 span {
-  color: #186ac1;
+  color: var(--blue-200);
 }
 .servicios {
   max-width: 1200px;
@@ -441,7 +451,7 @@ header {
   padding: 10px;
 }
 .nombre_servicio h4 {
-  color: #186ac1;
+  color: var(--blue-200);
   font-size: 20px;
   font-weight: 900;
 }
@@ -679,7 +689,7 @@ header {
   font-weight: bold;
   text-align: center;
   margin-bottom: 20px;
-  color: var(--blue-100);
+  color: var(--blue-200);
   font-size: 40px;
   font-weight: bold;
   text-align: center;
@@ -914,15 +924,62 @@ form button:hover {
   text-align: center;
   font-size: 30px;
   color: #fff;
-  text-transform: uppercase;
+  
   margin: 10px auto;
 }
 .mapa p {
   text-align: center;
   font-size: 25px;
   color: #fff;
-  text-transform: uppercase;
+  
   margin: 10px auto;
+}
+.container-1 {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.hero-container {
+  flex-direction: column;
+  background-image: url(../imagenes/nosotros/bg.webp);
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 300px;
+  position: relative;
+}
+.hero-bg {
+  background: linear-gradient(45deg, #2e9eba 46%, var(--green-100) 100%);
+}
+.hero-container .hero-txt {
+  background-color: #2e9eba;
+  padding: 20px 1rem 60px 1rem;
+  position: absolute;
+  bottom: -220px;
+}
+.hero-container .hero-txt h1 {
+  font-size: 30px;
+  margin-bottom: 10px;
+  color: white;
+}
+.hero-container .hero-txt p {
+  color: white;
+  margin-bottom: 20px;
+  max-width: 300px;
+}
+.hero-container .hero-txt a {
+  padding: 10px 25px;
+  background-color: aliceblue;
+  transition: all 0.275s ease-in;
+  border-radius: 5px;
+  text-decoration: none;
+  color: #000;
+}
+.hero-container .hero-txt a:hover {
+  transition: all 0.275s ease-in;
+  background-color: black;
+  color: white;
 }
 .container_ubiacion {
   display: grid;
@@ -1049,7 +1106,7 @@ footer {
   color: #fff;
   font-size: 30px;
   padding: 20px auto;
-  text-transform: uppercase;
+  
 }
 .contacto {
   background-color: #05a6e1;
@@ -1258,18 +1315,18 @@ footer {
   fill: white;
 }
 .flotantes a:nth-child(1) {
-  background-color: #41E06C;
+  background-color: #119e45;
   margin-bottom: 15px;
 }
 .flotantes a:nth-child(1):hover {
-  background-color: #07e242;
+  background-color: #64e285;
   transition: all 0.2s linear;
 }
 .flotantes a:nth-child(2) {
-  background-color: #009ec0;
+  background-color: var(--blue-200);
 }
 .flotantes a:nth-child(2):hover {
-  background-color: #05cffc;
+  background-color: #405dc7;
   transition: all 0.2s linear;
 }
 .container {
@@ -1278,6 +1335,9 @@ footer {
   align-items: center;
   width: 100%;
   margin: 40px 0;
+}
+#nosotros {
+  margin-top: 240px;
 }
 .nosotros-container {
   display: flex;
@@ -1294,15 +1354,15 @@ footer {
 .txt h1 {
   font-size: 2.2rem;
   text-align: center;
-  text-transform: uppercase;
-  color: var(--blue-100);
+  
+  color: var(--blue-200);
   margin-bottom: 20px;
 }
 .txt h2 {
   font-size: 1.8rem;
   text-align: center;
-  text-transform: uppercase;
-  color: white;
+  
+  color: var(--blue-200);
   margin-bottom: 20px;
 }
 .txt p {
@@ -1310,7 +1370,7 @@ footer {
   line-height: 1.5rem;
 }
 .bg-color {
-  background-color: gray;
+  background-color: #2e9ebaad;
 }
 .bg-color img {
   margin-bottom: 30px;
@@ -1318,6 +1378,9 @@ footer {
 .bg-color > h2 {
   color: white;
   margin-top: 20px;
+}
+.item_header p a:hover {
+  text-decoration: underline;
 }
 .nosotros-container a {
   display: flex;
@@ -1333,7 +1396,8 @@ footer {
   transition: all 0.2s linear;
 }
 .nosotros-container a:hover {
-  color: black;
+  background-color: white;
+  color: #000;
   transition: all 0.2s linear;
 }
 #less {
@@ -1349,10 +1413,39 @@ footer {
   transition: all 0.2s linear;
 }
 #less:hover, #more:hover {
-  color: black;
+  background-color: #2e9ebaad;
   transition: all 0.2s linear;
 }
 @media (min-width: 768px) {
+  .navegador-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+  }
+  .hero-container .hero-txt h1 {
+    font-size: 2.5rem;
+  }
+  .hero-container .hero-txt p {
+    font-size: 1.3rem;
+  }
+  .hero-container {
+    height: 610px;
+    align-items: baseline;
+    max-width: 1500px;
+    background-size: contain;
+    background-position: right top;
+  }
+  .hero-container .hero-txt {
+    position: relative;
+    bottom: 0;
+    background-color: transparent;
+    margin-left: 5vw;
+    max-width: 470px;
+    padding: 20px 1rem;
+    border-radius: 10px;
+  }
   .nosotros-container {
     flex-direction: row;
   }
@@ -1395,6 +1488,9 @@ footer {
     grid-template-columns: repeat(2, minmax(450px, 500px));
     gap: 40px;
   }
+  #nosotros {
+    margin-top: 0;
+  }
 }
 @media (max-width: 767px) {
   .container_ubiacion {
@@ -1411,7 +1507,7 @@ footer {
     text-align: center;
     font-size: 18px;
     color: #fff;
-    text-transform: uppercase;
+    
     margin: 10px auto;
   }
   .item_header p a {
@@ -1430,12 +1526,11 @@ footer {
   .logo_nav a img {
     max-width: 80%;
   }
-
   .tarjetas p {
     color: #fff;
     font-size: 17px;
     padding: 20px auto;
-    text-transform: uppercase;
+    
   }
   .card {
     max-width: 1400px;
@@ -1569,9 +1664,9 @@ footer {
     -o-transition: 0.5s;
     transition: 0.5s;
     width: 100%;
-    background-color: var(--blue-100);
+    background-color: var(--blue-200);
     height: 100vh;
-    margin-top: -70px;
+    margin-top: -110px;
   }
   .mostrar {
     -webkit-transform: translateY(60%);
@@ -1589,7 +1684,7 @@ footer {
     text-decoration: none;
     font-size: 20px;
     color: white;
-    text-transform: uppercase;
+    
   }
   .urgencias {
     color: #ff3333 !important;
@@ -1628,7 +1723,7 @@ footer {
     padding: 10px 20px;
     border-radius: 5px;
     font-size: 16px;
-    text-transform: uppercase;
+    
   }
   .barras {
     position: absolute;
@@ -1653,7 +1748,7 @@ footer {
     width: 12px;
     border-radius: 50%;
     margin: 0 2px;
-    background-color: var(--blue-100);
+    background-color: var(--blue-200);
     display: inline-block;
     margin-bottom: 8px;
   }
@@ -1681,13 +1776,12 @@ footer {
     margin: auto;
   }
   .tratamientos h2 {
-    color: #4f4e4e;
     font-size: 35px;
     font-weight: bold;
     text-align: center;
   }
   .tratamientos h2 span {
-    color: #186ac1;
+    color: var(--blue-200);
   }
   .servicios {
     max-width: 1200px;
@@ -1722,7 +1816,7 @@ footer {
     padding: 10px;
   }
   .nombre_servicio h4 {
-    color: #186ac1;
+    color: var(--blue-200);
     font-size: 17px;
     font-weight: 900;
   }

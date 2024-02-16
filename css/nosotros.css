@@ -24,7 +24,7 @@
     color: var(--blue-200);
     padding: 10px 0px;
     text-align: center;
-    text-transform: uppercase;
+    
     font-size: 35px;
     border-radius: 10px;
 }
@@ -155,7 +155,7 @@
     color: #feee00;
     padding: 10px 0px;
     text-align: center;
-    text-transform: uppercase;
+    
     font-size: 30px;
     border-radius: 10px;
     margin-top: 20px;
@@ -196,7 +196,7 @@
     color: #feee00;
     padding: 10px 0px;
     text-align: center;
-    text-transform: uppercase;
+    
     font-size: 30px;
     border-radius: 10px;
     margin-top: 20px;
@@ -231,7 +231,7 @@
     color: #feee00;
     padding: 10px 0px;
     text-align: center;
-    text-transform: uppercase;
+    
     font-size: 30px;
     border-radius: 10px;
     margin-top: 20px;
