@@ -800,6 +800,8 @@ header {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   position: relative;
+  place-content: center;
+  place-items: center;
 }
 .item_formulario {
   width: 100%;
@@ -1439,6 +1441,9 @@ footer {
   background-color: #073743ad;
   transition: all 0.2s linear;
 }
+.promo-des {
+  display: none;
+}
 @media (min-width: 768px) {
   .promo-item {
     grid-template-columns: repeat(2, minmax(350px, 500px));
@@ -1461,12 +1466,20 @@ footer {
   .hero-container .hero-txt p {
     font-size: 1.3rem;
   }
+  .promo-mov {
+    display: none;
+  }
   .hero-container {
     height: 610px;
     align-items: baseline;
     max-width: 1500px;
     background-size: contain;
     background-position: right top;
+  }
+  .btn-contacto-con {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    width: 50%;
   }
   .hero-container .hero-txt {
     position: relative;
@@ -1476,6 +1489,9 @@ footer {
     max-width: 470px;
     padding: 20px 1rem;
     border-radius: 10px;
+  }
+  .promo-des {
+    display: grid;
   }
   .nosotros-container {
     flex-direction: row;
