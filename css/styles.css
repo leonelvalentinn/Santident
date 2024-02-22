@@ -411,6 +411,13 @@ header {
   transition: all 0.8s ease-in-out;
   transform: scale(1.3) rotateY(180deg);
 }
+.qr {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
 @-webkit-keyframes brinco {
   0% {
     -webkit-transform: scale(1.5);
@@ -1445,6 +1452,21 @@ footer {
   display: none;
 }
 @media (min-width: 768px) {
+  .mapa .cc {
+    display: grid;
+    place-content: center;
+    place-items: center;
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 1200px;
+    gap: 40px;
+    width: 100%;
+  }
+  .mapa {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
   .promo-item {
     grid-template-columns: repeat(2, minmax(350px, 500px));
     gap: 30px;
