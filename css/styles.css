@@ -958,7 +958,7 @@ form button:hover {
   background: linear-gradient(45deg, #2e9eba 46%, var(--green-100) 100%);
 }
 .hero-container .hero-txt {
-  background-color: #2e9eba;
+  background-color: #001a23;
   padding: 20px 1rem 60px 1rem;
   position: absolute;
   bottom: -220px;
@@ -1335,7 +1335,7 @@ footer {
   transition: all 0.2s linear;
 }
 .flotantes a:nth-child(2) {
-  background-color: var(--blue-200);
+  background-color: #062e3b;
 }
 .flotantes a:nth-child(2):hover {
   background-color: #405dc7;
@@ -1765,7 +1765,7 @@ footer {
     width: 100%;
     background-color: var(--blue-200);
     height: 100vh;
-    margin-top: -110px;
+    margin-top: -60px;
   }
   .mostrar {
     -webkit-transform: translateY(60%);
