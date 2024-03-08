@@ -1451,7 +1451,109 @@ footer {
 .promo-des {
   display: none;
 }
+.mySwiper {
+  max-width: 1280px;
+}
+.gallery h2 {
+  text-transform: uppercase;
+  font-size: 35px;
+  padding: 0 1rem;
+  text-align: center;
+}
+.gallery .grid-gallery {
+  display: grid;
+  place-content: center;
+  place-items: center;
+  gap: 10px;
+  grid-template-columns: repeat(2, 1fr);
+  max-width: 1280px;
+  margin: 25px 0 0 0;
+  padding: 0 1rem;
+}
+.gallery .grid-gallery img {
+  width: 100%;
+  border-radius: 10px;
+  transition: all 0.2s linear;
+}
+.gallery .grid-gallery img:hover {
+  box-shadow: 0px 0px 59px 3px rgb(8, 8, 8);
+  transition: all 0.2s linear;
+}
+.gallery .grid-gallery img:nth-last-child(1) {
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
 @media (min-width: 768px) {
+  .gallery .grid-gallery {
+    grid-template-columns: repeat(12, 1fr);
+    gap: 20px;
+  }
+  .gallery .grid-gallery img:nth-last-child(11) {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 2;
+  }
+  .gallery .grid-gallery img:nth-last-child(10) {
+    grid-column-start: 4;
+    grid-column-end: 7;
+    grid-row-start: 1;
+    grid-row-end: 2;
+  }
+  .gallery .grid-gallery img:nth-last-child(9) {
+    grid-column-start: 7;
+    grid-column-end: 10;
+    grid-row-start: 1;
+    grid-row-end: 2;
+  }
+  .gallery .grid-gallery img:nth-last-child(8) {
+    grid-column-start: 10;
+    grid-column-end: 13;
+    grid-row-start: 1;
+    grid-row-end: 2;
+  }
+  .gallery .grid-gallery img:nth-last-child(7) {
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 2;
+    grid-row-end: 3;
+  }
+  .gallery .grid-gallery img:nth-last-child(6) {
+    grid-column-start: 5;
+    grid-column-end: 9;
+    grid-row-start: 2;
+    grid-row-end: 3;
+  }
+  .gallery .grid-gallery img:nth-last-child(5) {
+    grid-column-start: 9;
+    grid-column-end: 13;
+    grid-row-start: 2;
+    grid-row-end: 3;
+  }
+  .gallery .grid-gallery img:nth-last-child(4) {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 3;
+    grid-row-end: 4;
+  }
+  .gallery .grid-gallery img:nth-last-child(3) {
+    grid-column-start: 4;
+    grid-column-end: 7;
+    grid-row-start: 3;
+    grid-row-end: 4;
+  }
+  .gallery .grid-gallery img:nth-last-child(2) {
+    grid-column-start: 7;
+    grid-column-end: 10;
+    grid-row-start: 3;
+    grid-row-end: 4;
+  }
+  .gallery .grid-gallery img:nth-last-child(1) {
+    grid-column-start: 10;
+    grid-column-end: 13;
+    grid-row-start: 3;
+    grid-row-end: 4;
+  }
   .mapa .cc {
     display: grid;
     place-content: center;
