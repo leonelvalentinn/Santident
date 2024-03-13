@@ -1426,6 +1426,21 @@ footer {
   margin: 20px 0;
   transition: all 0.2s linear;
 }
+.slide-promo {
+  padding: 15px;
+  border-radius: 10px;
+  display: flex !important;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  height:fit-content !important;
+}
+.slide-promo img {
+  object-fit: contain !important;
+  border-radius: 10px;
+  width: 100% !important;
+  height: auto !important;
+}
 .nosotros-container a:hover {
   background-color: white;
   color: #000;
@@ -1569,10 +1584,7 @@ footer {
     align-items: center;
     flex-direction: column;
   }
-  .promo-item {
-    grid-template-columns: repeat(2, minmax(350px, 500px));
-    gap: 30px;
-  }
+  
   .promo-item img {
     max-width: 400px;
     margin-bottom: 0;
