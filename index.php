@@ -22,6 +22,7 @@
     <title>Santident Clínica Dental</title>
     <link rel="shortcut icon" href="imagenes/favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="css/styles.css" />
+    <script src="https://www.google.com/recaptcha/api.js?hl=es" async defer></script>
     <link
       rel="stylesheet" 
       href="https://cdnjs.cloudflare.com/ajax/libs/hamburgers/1.1.3/hamburgers.min.css"
@@ -40,85 +41,6 @@
     href="https://unpkg.com/swiper/swiper-bundle.min.css"
   />
     <script src="aos/aos.js"></script>
-    <!-- Código de analytics  -->
-    <script
-      async
-      src="https://www.googletagmanager.com/gtag/js?id=G-CT7GPSNPXD"
-    ></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag() {
-        dataLayer.push(arguments);
-      }
-      gtag("js", new Date());
-
-      gtag("config", "G-CT7GPSNPXD");
-    </script>
-    <!-- Fin de Código de analytics  -->
-    <!-- Meta Pixel Code -->
-    <script>
-      !(function (f, b, e, v, n, t, s) {
-        if (f.fbq) return;
-        n = f.fbq = function () {
-          n.callMethod
-            ? n.callMethod.apply(n, arguments)
-            : n.queue.push(arguments);
-        };
-        if (!f._fbq) f._fbq = n;
-        n.push = n;
-        n.loaded = !0;
-        n.version = "2.0";
-        n.queue = [];
-        t = b.createElement(e);
-        t.async = !0;
-        t.src = v;
-        s = b.getElementsByTagName(e)[0];
-        s.parentNode.insertBefore(t, s);
-      })(
-        window,
-        document,
-        "script",
-        "https://connect.facebook.net/en_US/fbevents.js"
-      );
-      fbq("init", "489645959612968");
-      fbq("track", "PageView");
-    </script>
-    <noscript
-      ><img
-        height="1"
-        width="1"
-        style="display: none"
-        src="https://www.facebook.com/tr?id=489645959612968&ev=PageView&noscript=1"
-    /></noscript>
-    <!-- End Meta Pixel Code -->
-    <!-- Código de adds whatsApp   -->
-    <script>
-      function gtag_report_conversion(url) {
-        var callback = function () {
-          if (typeof url != "undefined") {
-            window.location = url;
-          }
-        };
-        gtag("event", "conversion", {
-          send_to: "AW-10851115297/8SHaCMmFm6ADEKHCm7Yo",
-          event_callback: callback,
-        });
-        return false;
-      }
-    </script>
-    <script>
-      gtag("event", "conversion", {
-        send_to: "AW-10851115297/SDIFCKrtzqADEKHCm7Yo",
-      });
-    </script>
-    <!-- Fin de Código de adds whatsApp   -->
-    <!-- Código de adds teléfono   -->
-    <script>
-      gtag("config", "AW-10851115297/SxFxCLbek6ADEKHCm7Yo", {
-        phone_conversion_number: "6012371655",
-      });
-    </script>
-    <!-- Fin de Código de adds teléfono   -->
     <style>
       .swiper {
         width: 90%;
@@ -177,7 +99,7 @@
   <body>
     <header>
       <div class="item_header">
-        <p><a href="https://wa.me/524531331633?text=Buenas%20tardes,%20solicito%20informaci%C3%B3n%20sobre" target="_blank">Agenda tu cita</a></p>
+        <p><a href="https://wa.me/524531331633?text=Buenas%20tardes,%20solicito%20informaci%C3%B3n%20sobre" rel="noopener noreferrer" target="_blank">Agenda tu cita</a></p>
         <p><a href="tel:4531331633" target="_blank">Teléfono: 4531331633</a></p>
       </div>
       <div class="navegador-container">
@@ -191,12 +113,12 @@
             </label>
           </div>
           <div class="logo_nav">
-            <a href="index.html"
-              ><img src="imagenes/logo.png" alt="" class="logo_tunjano"
+            <a href="index.php"
+              ><img src="imagenes/logo.webp" alt="" class="Logo Santident"
             /></a>
           </div>
           <ul class="menu">
-            <li><a href="index.html" class="menu_links">Inicio</a></li>
+            <li><a href="index.php" class="menu_links">Inicio</a></li>
             <li><a href="#nosotros" class="menu_links">Nosotros</a></li>
             <li><a href="#promociones" class="menu_links">Promociones</a></li>
             <!--<li>
@@ -582,7 +504,7 @@
             En nuestro centro, contamos con la mejor tecnología disponible para realizar radiografías dentales de todo tipo. Nuestro equipo está equipado con los últimos avances en tecnología radiológica, lo que nos permite obtener imágenes precisas y detalladas de la boca y los dientes de nuestros pacientes.
           </p>
         </div>
-        <img src="imagenes/radiografia.jpg" alt="Equipo Santident" style="max-width: 450px !important; border-radius: 10px;">
+        <img src="imagenes/radiografia.webp" alt="Equipo Santident" style="max-width: 450px !important; border-radius: 10px;">
         <div class="txt">
           <h2><strong style="color: var(--blue-200); font-size: 1.4rem;">Contamos con radiografías:</strong></h2>
           <ul style="color: var(--blue-200);">
@@ -714,11 +636,20 @@
     <section class="container bg-color" style="flex-direction: column;" id="promociones">
       <h2>Promociones</h2>
       <div class="container-promociones">
-        <div class="swiper mySwiper">
+        <div class="swiper SwiperPromos">
           <div class="swiper-wrapper">
             <div class="swiper-slide slide-promo">
               <div class="promo-item">
-                <img src="imagenes/promociones/promo-1.png" alt="Promocion">
+                <img src="imagenes/promociones/promo-1.webp" alt="Promoción">
+                <div>
+                  <p>No dejes pasar esta oportunidad única para cuidar tu salud bucal. Aprovecha nuestra promoción especial que incluye dos limpiezas dentales completas por tan sólo $900. Con este tratamiento, podrás mantener tus dientes y encías en óptimas condiciones.</p>
+                  <a href="https://api.whatsapp.com/send?phone=524531331633" target="_blank" rel="noopener noreferrer">Agenda tu cita</a>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide slide-promo">
+              <div class="promo-item">
+                <img src="imagenes/promociones/promo-2.webp" alt="Promocion">
                 <div>
                   <p>¡Aprovecha nuestra promoción especial para la colocación de brackets en nuestra clínica dental! Obtén una sonrisa perfecta a un precio excepcional. Agenda tu consulta hoy mismo para más detalles.</p>
                   <a href="https://api.whatsapp.com/send?phone=524531331633" target="_blank" rel="noopener noreferrer">Agenda tu cita</a>
@@ -727,27 +658,19 @@
             </div>
             <div class="swiper-slide slide-promo">
               <div class="promo-item">
-                <img src="imagenes/promociones/promo-1.png" alt="Promocion">
+                <img src="imagenes/promociones/promo-3.webp" alt="Promocion">
                 <div>
-                  <p>¡Aprovecha nuestra promoción especial para la colocación de brackets en nuestra clínica dental! Obtén una sonrisa perfecta a un precio excepcional. Agenda tu consulta hoy mismo para más detalles.</p>
+                  <p>Aprovecha al máximo nuestra increíble promoción con un 30% de descuento en brackets autoligados. Con nuestros brackets autoligados, podrás corregir tu dentadura de manera más rápida y cómoda que nunca.</p>
                   <a href="https://api.whatsapp.com/send?phone=524531331633" target="_blank" rel="noopener noreferrer">Agenda tu cita</a>
                 </div>
               </div>
             </div>
             <div class="swiper-slide slide-promo">
               <div class="promo-item">
-                <img src="imagenes/promociones/promo-1.png" alt="Promocion">
+                <img src="imagenes/promociones/promo-4.webp" alt="Promocion">
                 <div>
-                  <p>¡Aprovecha nuestra promoción especial para la colocación de brackets en nuestra clínica dental! Obtén una sonrisa perfecta a un precio excepcional. Agenda tu consulta hoy mismo para más detalles.</p>
-                  <a href="https://api.whatsapp.com/send?phone=524531331633" target="_blank" rel="noopener noreferrer">Agenda tu cita</a>
-                </div>
-              </div>
-            </div>
-            <div class="swiper-slide slide-promo">
-              <div class="promo-item">
-                <img src="imagenes/promociones/promo-1.png" alt="Promocion">
-                <div>
-                  <p>¡Aprovecha nuestra promoción especial para la colocación de brackets en nuestra clínica dental! Obtén una sonrisa perfecta a un precio excepcional. Agenda tu consulta hoy mismo para más detalles.</p>
+                  <p>
+                    Aprovecha nuestra promoción especial de endodoncia desde tan sólo $1,900 (Rayos X incluidos). Con este tratamiento, podrás resolver problemas de raíz y mantener tus dientes sanos y fuertes.</p>
                   <a href="https://api.whatsapp.com/send?phone=524531331633" target="_blank" rel="noopener noreferrer">Agenda tu cita</a>
                 </div>
               </div>
@@ -775,6 +698,20 @@
         <img src="imagenes/santident/somos-7.webp" alt="Galería">
       </div>
     </section>
+    <section class="container gallery" style="flex-direction: column;">
+      <h2>Antes y después</h2>
+      <h5>Pasa el mouse o dale click a la imagen</h5>
+      <div class="casos-exito">
+        <article>
+          <img src="imagenes/casos/ortodoncia.webp" alt="Antes y después de un tratamiento de ortodoncia">
+          <a href="https://wa.me/524531331633?text=Buenas%20tardes,%20solicito%20informaci%C3%B3n%20sobre%20su%20tratamiento%20de%20ortodoncia" target="_blank" rel="noopener noreferrer">Ortodoncia</a>
+        </article>
+        <article>
+          <img src="imagenes/casos/carillas-zirconia.webp" alt="Antes y después de un tratamiento de carillas de zirconia">
+          <a href="https://wa.me/524531331633?text=Buenas%20tardes,%20solicito%20informaci%C3%B3n%20sobre%20su%20tratamiento%20de%20carillas" target="_blank" rel="noopener noreferrer">Carillas</a>
+        </article>
+      </div>
+    </section>
     <section class="forma_de_pago" id="pago">
       <h2>FACILIDADES DE PAGO</h2>
       <div class="payment_list">
@@ -799,6 +736,9 @@
       </div>
     </section>
     <div class="section_formulario" id="contactodos">
+      <?php
+        require_once "recaptchalib.php";
+      ?>
       <div class="item_formulario">
         <h4>CONTÁCTENOS</h4>
         <h5>¿TE LLAMAMOS?</h5>
@@ -828,16 +768,16 @@
           <input type="tel" id="phone" name="phone" required/><br />
           <label for="correo">Mi correo</label>
           <input type="email" id="correo" name="correo" required/>
-
+          <div class="g-recaptcha" data-sitekey="6LeNKZkpAAAAAEXkPnjfCK0zAjmcvuKwHzvPYtGc"></div>
           <button type="submit">Enviar</button>
         </form>
       </div>
       <div class="item_formulario" id="contacto">
-        <img src="imagenes/chica_contacto.png" alt="" class="chica" />
+        <img src="imagenes/chica_contacto.webp" alt="" class="chica" />
       </div>
 
       <a href="https://api.whatsapp.com/send?phone=524531331633" target="_blank" class="btn-contacto-con"
-        ><img src="imagenes/boton_contacto.png" alt="" class="btn-contacto"
+        ><img src="imagenes/boton_contacto.webp" alt="" class="btn-contacto"
       /></a>
     </div>
     <div class="mapa" >
@@ -944,6 +884,44 @@
       AOS.init();
     </script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+      var swiper = new Swiper(".SwiperPromos", {
+        slidesPerView: 1,
+        spaceBetween: 30,
+        slidesPerGroup: 1,
+        autoplay: {
+          delay: 4000,
+          disableOnInteraction: true,
+        },
+        loop: true,
+        loopFillGroupWithBlank: true,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        breakpoints: {
+          // when window width is >= 320px
+          320: {
+            slidesPerView: 1,
+            slidesPerGroup: 1,
+          },
+          // when window width is >= 480px
+          480: {
+            slidesPerView: 1,
+            slidesPerGroup: 3,
+          },
+          // when window width is >= 640px
+          640: {
+            slidesPerView: 3,
+            slidesPerGroup: 1,
+          },
+        },
+      });
+    </script>
     <script>
       var swiper = new Swiper(".mySwiper", {
         slidesPerView: 1,

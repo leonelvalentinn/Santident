@@ -37,7 +37,6 @@
     $response = $reCaptcha->verifyResponse( $_SERVER["REMOTE_ADDR"], $_POST["g-recaptcha-response"] ); 
   } 
   if ($response != null && $response->success) { 
-    // Añade aquí el código que desees en el caso de que la validación sea correcta 
     //Guardamos los datos escritos por el usuario
     $nombre = $_POST['Name'];
     $tratamiento = $_POST['Tratamiento'];
@@ -69,7 +68,6 @@
       header('Location:exito.html');
     }
   } else { 
-    // Añade aquí el código que desees en el caso de que la validación no sea correcta o muestra
     header('Location:index.php');
   }
 ?>
