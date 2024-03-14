@@ -1,14 +1,30 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
+    <meta name="description" content="¡Bienvenido a Santident! Tu sonrisa es nuestra prioridad. En nuestra clínica dental, ofrecemos atención personalizada y de calidad respaldada por años de experiencia y tecnología de vanguardia. Descubre cómo podemos ayudarte a lograr una salud bucal óptima y una sonrisa radiante. ¡Programa tu cita hoy mismo!">
+    <meta name="keywords" content="dentista, salud dental, odontología, ortodoncia, estética dental, limpieza dental, chequeo dental, Harmony Dental Clinic">
+    <meta name="author" content="Leonel Valentín">
+    <meta name="robots" content="index, follow">
+    <!-- Open Graph data -->
+    <meta property="og:title" content="Santident Clínica Dental">
+    <meta property="og:type" content="Web">
+    <meta property="og:url" content="https://clinicasantident.mx">
+    <meta property="og:image" content="https://clinicasantident.mx/imagenes/logo.webp">
+    <meta property="og:description" content="¡Bienvenido a Santident! Tu sonrisa es nuestra prioridad. En nuestra clínica dental, ofrecemos atención personalizada y de calidad respaldada por años de experiencia y tecnología de vanguardia. Descubre cómo podemos ayudarte a lograr una salud bucal óptima y una sonrisa radiante. ¡Programa tu cita hoy mismo!">
+    <meta property="og:site_name" content="Santident Clínica Dental">
+    <meta property="article:published_time" content="2024-02-06T05:59:00+01:00">
+    <meta property="article:modified_time" content="2024-02-06T05:59:00+01:00">
+    <meta property="article:section" content="Clínica dental">
+
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Odontología Elizabeth Baquero</title>
+    <title>Santident Clínica Dental</title>
     <link rel="shortcut icon" href="imagenes/favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="css/styles.css" />
+    <script src="https://www.google.com/recaptcha/api.js?hl=es" async defer></script>
     <link
-      rel="stylesheet"
+      rel="stylesheet" 
       href="https://cdnjs.cloudflare.com/ajax/libs/hamburgers/1.1.3/hamburgers.min.css"
     />
     <link
@@ -20,147 +36,183 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
     />
     <link rel="stylesheet" href="aos/aos.css" />
+    <link
+    rel="stylesheet"
+    href="https://unpkg.com/swiper/swiper-bundle.min.css"
+  />
     <script src="aos/aos.js"></script>
-    <!-- Código de analytics  -->
-    <script
-      async
-      src="https://www.googletagmanager.com/gtag/js?id=G-CT7GPSNPXD"
-    ></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag() {
-        dataLayer.push(arguments);
-      }
-      gtag("js", new Date());
-
-      gtag("config", "G-CT7GPSNPXD");
-    </script>
-    <!-- Fin de Código de analytics  -->
-    <!-- Meta Pixel Code -->
-    <script>
-      !(function (f, b, e, v, n, t, s) {
-        if (f.fbq) return;
-        n = f.fbq = function () {
-          n.callMethod
-            ? n.callMethod.apply(n, arguments)
-            : n.queue.push(arguments);
-        };
-        if (!f._fbq) f._fbq = n;
-        n.push = n;
-        n.loaded = !0;
-        n.version = "2.0";
-        n.queue = [];
-        t = b.createElement(e);
-        t.async = !0;
-        t.src = v;
-        s = b.getElementsByTagName(e)[0];
-        s.parentNode.insertBefore(t, s);
-      })(
-        window,
-        document,
-        "script",
-        "https://connect.facebook.net/en_US/fbevents.js"
-      );
-      fbq("init", "489645959612968");
-      fbq("track", "PageView");
-    </script>
-    <noscript
-      ><img
-        height="1"
-        width="1"
-        style="display: none"
-        src="https://www.facebook.com/tr?id=489645959612968&ev=PageView&noscript=1"
-    /></noscript>
-    <!-- End Meta Pixel Code -->
-    <!-- Código de adds whatsApp   -->
-    <script>
-      function gtag_report_conversion(url) {
-        var callback = function () {
-          if (typeof url != "undefined") {
-            window.location = url;
-          }
-        };
-        gtag("event", "conversion", {
-          send_to: "AW-10851115297/8SHaCMmFm6ADEKHCm7Yo",
-          event_callback: callback,
-        });
-        return false;
-      }
-    </script>
-    <script>
-      gtag("event", "conversion", {
-        send_to: "AW-10851115297/SDIFCKrtzqADEKHCm7Yo",
-      });
-    </script>
-    <!-- Fin de Código de adds whatsApp   -->
-    <!-- Código de adds teléfono   -->
-    <script>
-      gtag("config", "AW-10851115297/SxFxCLbek6ADEKHCm7Yo", {
-        phone_conversion_number: "6012371655",
-      });
-    </script>
-    <!-- Fin de Código de adds teléfono   -->
     <style>
-      .exito {
-        background-image: url(imagenes/fondoatras.png);
-        background-size: cover;
+      .swiper {
+        width: 90%;
+        height: 100%;
+        margin: 40px 0px 30px 0px;
+      }
+
+      .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+
+        /* Center slide text vertically */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
         display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
         justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+      }
+
+      .swiper-slide img {
+        display: block;
         width: 100%;
         height: 100%;
+        object-fit: cover;
       }
-      .exito h1 {
-        color: #002c89;
-        margin-top: 80px;
+      .swiper-pagination {
+        position: relative;
+        margin-top: 15px;
+      }
+      .swiper-pagination .swiper-pagination-bullet {
+        height: 7px;
+        width: 27px;
+        background-color: var(--blue-200);
+        border-radius: 20px;
+      }
+      .swiper-button-next, .swiper-button-prev {
+        padding: 18px !important;
+        border-radius: 50% !important;
+        background-color: #001a2398 !important;
+        transition: all 0.2s linear;
+      }
+      .swiper-button-next:hover, .swiper-button-prev:hover {
+        background-color: var(--blue-200) !important;
+        transition: all 0.2s linear;
       }
     </style>
   </head>
   <body>
     <header>
       <div class="item_header">
-        <p><a href="tel:6012731655" target="_blank">Agenda tu cita</a></p>
-        <p><a href="tel:6012731655" target="_blank">Teléfono: 6012731655</a></p>
+        <p><a href="https://wa.me/524531331633?text=Buenas%20tardes,%20solicito%20informaci%C3%B3n%20sobre" rel="noopener noreferrer" target="_blank">Agenda tu cita</a></p>
+        <p><a href="tel:4531331633" target="_blank">Teléfono: 4531331633</a></p>
       </div>
-      <nav class="navegador">
-        <div class="menu-bar">
-          <input type="checkbox" id="btn-menu" />
-          <label for="btn-menu" class="lbl-menu">
-            <span id="spn1"></span>
-            <span id="spn2"></span>
-            <span id="spn3"></span>
-          </label>
+      <div class="navegador-container">
+        <nav class="navegador">
+          <div class="menu-bar">
+            <input type="checkbox" id="btn-menu" />
+            <label for="btn-menu" class="lbl-menu">
+              <span id="spn1"></span>
+              <span id="spn2"></span>
+              <span id="spn3"></span>
+            </label>
+          </div>
+          <div class="logo_nav">
+            <a href="index.php"
+              ><img src="imagenes/logo.webp" alt="" class="Logo Santident"
+            /></a>
+          </div>
+          <ul class="menu">
+            <li><a href="index.php" class="menu_links">Inicio</a></li>
+            <li><a href="#nosotros" class="menu_links">Nosotros</a></li>
+            <li><a href="#promociones" class="menu_links">Promociones</a></li>
+            <!--<li>
+              <a
+                href="https://api.whatsapp.com/send?phone=573204966930"
+                class="urgencias menu_links"
+                target="_blank"
+                >Urgencias
+              </a>
+            </li>-->
+            <li><a href="#servicios" class="menu_links">Tratamientos</a></li>
+        
+            <li><a href="#ubicacion" class="menu_links">Ubicación</a></li>
+            <li><a href="https://wa.me/524531331633?text=Buenas%20tardes,%20solicito%20informaci%C3%B3n%20sobre" class="menu_links">Contacto</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <section  style="padding: 0 1rem; height: 300px; width: 100%; margin-top: 50px;">
+      <h1>Correo enviado con éxito, nos pondremos en contacto contigo muy pronto</h1>
+    </section>
+    <footer>
+      <div class="item_footer">
+        <h4 class="list__button--click">MENÚ</h4>
+        <ul>
+          <li><a href="#nosotros">Nosotros</a></li>
+          <li><a href="#promociones">Promociones</a></li>
+          <li><a href="#servicios">Tratamientos</a></li>
+          <li><a href="#ubicacion">Ubicación</a></li>
+        </ul>
+      </div>
+      <div class="item_footer">
+        <h4 class="list__button--click">ESPECIALIDADES Y TRATAMIENTOS</h4>
+        <div class="sub_item">
+          <ul>
+            <li><a href="#servicios">Blanqueamiento dental</a></li>
+            <li><a href="#servicios">Limpieza dental</a></li>
+            <li><a href="#todo">Ortodoncia</a></li>
+          </ul>
+          <ul>
+            <li><a href="#todo">Implantes dentales</a></li>
+            <li><a href="#todo">Diseño de sonrisa</a></li>
+            <li><a href="#todo">Radiografías</a></li>
+            <li><a href="#todo">Endodoncia</a></li>
+          </ul>
         </div>
-        <div class="logo_nav">
-          <a href="index.html"
-            ><img src="imagenes/logo.png" alt="" class="logo_tunjano"
-          /></a>
-        </div>
-        <ul class="menu">
-          <li><a href="index.html" class="menu_links">Inicio</a></li>
-          <li><a href="nosotros.html" class="menu_links">Nosotros</a></li>
-          <li><a href="promociones.html" class="menu_links">Promociones</a></li>
+      </div>
+      <div class="item_footer">
+        <h4>REDES SOCIALES</h4>
+        <ul>
           <li>
             <a
-              href="https://api.whatsapp.com/send?phone=573204966930"
-              class="urgencias menu_links"
+              href="https://www.facebook.com/profile.php?id=100063892245899"
               target="_blank"
-              >Urgencias
-            </a>
+              ><i class="fab fa-facebook-f"></i
+            ></a>
           </li>
-          <li><a href="#servicios" class="menu_links">Tratamientos</a></li>
-
-          <li><a href="#ubicacion" class="menu_links">Ubicación</a></li>
-          <li><a href="#contactodos" class="menu_links">Contacto</a></li>
+          <li>
+            <a
+              href="https://www.tiktok.com/@dr.ulisesmaldonado"
+              target="_blank"
+              ><i class="fab fa-tiktok"></i
+            ></a>
+          </li>
+          <li>
+            <a
+              href="https://api.whatsapp.com/send?phone=524531331633"
+              target="_blank"
+              ><i class="fab fa-whatsapp"></i
+            ></a>
+          </li>
         </ul>
-      </nav>
-    </header>
-    <div class="exito">
-      <h1>Mensaje enviado. En breve nos pondremos en contacto contigo</h1>
-    </div>
+        <div>
+          <p>Políticas de Privacidad Términos y Condiciones</p>
+          <p>
+            © 2024 Todos los derechos reservados Santident Clínica Dental
+          </p>
+        </div>
+      </div>
+      <div class="item_footer">
+        <p>
+          Desarrollado por
+          <a href="https://dentarios.com.mx/programacion.php" target="_blank">
+            Agencia de Marketing Dentarios</a
+          >
+          © 2024
+        </p>
+      </div>
+    </footer>
     <script>
-      setTimeout(function (){
-        window.location.replace("index.html");
-      },3000);
+      setInterval(() => {
+        window.location.assign('index.php')
+      }, 2000);
     </script>
+    <script src="js/index.js"></script>
   </body>
 </html>
