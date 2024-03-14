@@ -1,6 +1,6 @@
 <?php
   require_once "recaptchalib.php"; 
-  
+  $clave = $_ENV['SECRET'];
   $secret = "6LeNKZkpAAAAAFN2LXUuDCjmgwzXvzxNUxOLDNXm"; 
   $response = null; 
 
@@ -47,7 +47,7 @@
     $mail->From = $correo;
     $mail->FromName = $nombre;
     $email_template = 'mail_template.html';
-    $email = 'linoulises.maldonadomich@gmail.com'; //
+    $email = 'linoulises.maldonadomich@gmail.com'; //linoulises.maldonadomich@gmail.com
     $f_name = 'Dr. Lino';
 
     $message = file_get_contents($email_template);
