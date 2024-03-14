@@ -418,6 +418,10 @@ header {
   align-items: center;
   flex-direction: column;
 }
+.qr a {
+  padding: 1rem;
+  background-color: white;
+}
 @-webkit-keyframes brinco {
   0% {
     -webkit-transform: scale(1.5);
@@ -894,6 +898,7 @@ form button {
   font-weight: 500;
   cursor: pointer;
   transition: all 0.2s linear;
+  margin-top: 20px;
 }
 form button:hover {
   transition: all 0.2s linear;
