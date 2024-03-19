@@ -113,7 +113,7 @@
             </label>
           </div>
           <div class="logo_nav">
-            <a href="index.php"
+            <a href="index.php" aria-label="Ir al inicio de la página"
               ><img src="imagenes/logo.webp" alt="" class="Logo Santident"
             /></a>
           </div>
@@ -175,7 +175,7 @@
       <h2>Tratamientos</h2>
       <div class="servicios" id="container-tratamientos">
         <div class="item_servicios">
-          <a href="https://wa.me/524531331633?text=Buenas%20tardes,%20solicito%20informaci%C3%B3n%20sobre" id="trata_uno"
+          <a href="https://wa.me/524531331633?text=Buenas%20tardes,%20solicito%20informaci%C3%B3n%20sobre" id="trata_uno" aria-label="Contactar al WhatsApp de la clínica"
             ><img src="imagenes/rayos-x.png" alt=""
           /></a>
           <div class="nombre_servicio">
@@ -183,7 +183,7 @@
           </div>
         </div>
         <div class="item_servicios">
-          <a href="https://wa.me/524531331633?text=Buenas%20tardes,%20solicito%20informaci%C3%B3n%20sobre" id="trata_dos"
+          <a href="https://wa.me/524531331633?text=Buenas%20tardes,%20solicito%20informaci%C3%B3n%20sobre" id="trata_dos" aria-label="Contactar al WhatsApp de la clínica"
             ><img src="imagenes/tirantes.png" alt=""
           /></a>
           <div class="nombre_servicio">
@@ -191,7 +191,7 @@
           </div>
         </div>
         <div class="item_servicios">
-          <a href="https://wa.me/524531331633?text=Buenas%20tardes,%20solicito%20informaci%C3%B3n%20sobre" id="trata_tres">
+          <a href="https://wa.me/524531331633?text=Buenas%20tardes,%20solicito%20informaci%C3%B3n%20sobre" id="trata_tres" aria-label="Contactar al WhatsApp de la clínica">
             <img src="imagenes/endodoncia.png" alt=""
           /></a>
           <div class="nombre_servicio">
@@ -199,7 +199,7 @@
           </div>
         </div>
         <div class="item_servicios">
-          <a href="https://wa.me/524531331633?text=Buenas%20tardes,%20solicito%20informaci%C3%B3n%20sobre" id="trata_cuatro">
+          <a href="https://wa.me/524531331633?text=Buenas%20tardes,%20solicito%20informaci%C3%B3n%20sobre" id="trata_cuatro" aria-label="Contactar al WhatsApp de la clínica">
             <img src="imagenes/corona-dental.png" alt=""
           /></a>
           <div class="nombre_servicio">
@@ -207,7 +207,7 @@
           </div>
         </div>
         <div class="item_servicios">
-          <a href="https://wa.me/524531331633?text=Buenas%20tardes,%20solicito%20informaci%C3%B3n%20sobre" id="trata_cinco">
+          <a href="https://wa.me/524531331633?text=Buenas%20tardes,%20solicito%20informaci%C3%B3n%20sobre" id="trata_cinco" aria-label="Contactar al WhatsApp de la clínica">
             <img src="imagenes/cirugia-dental.png" alt=""
           /></a>
           <div class="nombre_servicio">
@@ -215,7 +215,7 @@
           </div>
         </div>
         <div class="item_servicios">
-          <a href="https://wa.me/524531331633?text=Buenas%20tardes,%20solicito%20informaci%C3%B3n%20sobre" id="trata_seis"
+          <a href="https://wa.me/524531331633?text=Buenas%20tardes,%20solicito%20informaci%C3%B3n%20sobre" id="trata_seis" aria-label="Contactar al WhatsApp de la clínica"
             ><img src="imagenes/diente.png" alt=""
           /></a>
           <div class="nombre_servicio">
@@ -715,7 +715,6 @@
     <section class="forma_de_pago" id="pago">
       <h2>FACILIDADES DE PAGO</h2>
       <div class="payment_list">
-        <img src="imagenes/fondo_pago_movil.png" alt="" class="img_movil" />
         <ul class="list">
           <li class="list__item">
             <div class="list__button list__button--click">
@@ -743,16 +742,16 @@
         <h4>CONTÁCTENOS</h4>
         <h5>¿TE LLAMAMOS?</h5>
         <p>
-          Dejanos tus datos de contacto y uno de <br />
+          Déjanos tus datos de contacto y uno de <br />
           nuestros expertos se comunicará contigo.
         </p>
         <img src="imagenes/contacto.png" alt="" />
         <form action="email.php" method="POST">
           <label for="Name">Hola, mi nombre es:</label>
           <input type="text" id="Name" name="Name" required/> <br />
-          <label for="tratamiento">Estoy interesado(a) en</label>
+          <label for="Tratamiento">Estoy interesado(a) en</label>
           <select name="Tratamiento" id="Tratamiento" required>
-            <option value="">Elije tu tratamiento</option>
+            <option>Elije tu tratamiento</option>
             <option>Endodoncia</option>
             <option>Ortodoncia</option>
             <option>Periodoncia</option>
@@ -764,7 +763,7 @@
             <option>Otro</option>
           </select>
           <br />
-          <label for="telefono">Mi celular</label>
+          <label for="phone">Mi celular</label>
           <input type="tel" id="phone" name="phone" required/><br />
           <label for="correo">Mi correo</label>
           <input type="email" id="correo" name="correo" required/>
@@ -776,7 +775,7 @@
         <img src="imagenes/chica_contacto.webp" alt="" class="chica" />
       </div>
 
-      <a href="https://api.whatsapp.com/send?phone=524531331633" target="_blank" class="btn-contacto-con"
+      <a href="https://api.whatsapp.com/send?phone=524531331633" target="_blank" class="btn-contacto-con" aria-label="Contactar al WhatsApp de la clínica"
         ><img src="imagenes/boton_contacto.webp" alt="" class="btn-contacto"
       /></a>
     </div>
@@ -795,13 +794,13 @@
         </div>
       </div>
       <div class="container_ubiacion">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3358.7040656674026!2d-102.34918279748668!3d19.106870774735498!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8431e1de671f0035%3A0x2a95516d1acd85ac!2sClinica%20Dental%20Santident!5e0!3m2!1ses-419!2smx!4v1707776514719!5m2!1ses-419!2smx" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3358.7040656674026!2d-102.34918279748668!3d19.106870774735498!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8431e1de671f0035%3A0x2a95516d1acd85ac!2sClinica%20Dental%20Santident!5e0!3m2!1ses-419!2smx!4v1707776514719!5m2!1ses-419!2smx" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title='mapa'></iframe>
       </div>
       <div class="flotantes">
-        <a href="https://api.whatsapp.com/send?phone=524531331633" target="_blank">
+        <a href="https://api.whatsapp.com/send?phone=524531331633" target="_blank" aria-label="Contactar al WhatsApp de la clínica">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7 .9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z"/></svg>
         </a>
-        <a href="tel:4531331633">
+        <a href="tel:4531331633" aria-label="Contactar al teléfono de la clínica">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M164.9 24.6c-7.7-18.6-28-28.5-47.4-23.2l-88 24C12.1 30.2 0 46 0 64C0 311.4 200.6 512 448 512c18 0 33.8-12.1 38.6-29.5l24-88c5.3-19.4-4.6-39.7-23.2-47.4l-96-40c-16.3-6.8-35.2-2.1-46.3 11.6L304.7 368C234.3 334.7 177.3 277.7 144 207.3L193.3 167c13.7-11.2 18.4-30 11.6-46.3l-40-96z"/></svg>
         </a>
       </div>
@@ -839,6 +838,7 @@
             <a
               href="https://www.facebook.com/profile.php?id=100063892245899"
               target="_blank"
+              aria-label="Contactar el facebook de Santident"
               ><i class="fab fa-facebook-f"></i
             ></a>
           </li>
@@ -846,6 +846,7 @@
             <a
               href="https://www.tiktok.com/@dr.ulisesmaldonado"
               target="_blank"
+              aria-label="Visitar el TikTok del Dr. Ulises"
               ><i class="fab fa-tiktok"></i
             ></a>
           </li>
@@ -853,6 +854,7 @@
             <a
               href="https://api.whatsapp.com/send?phone=524531331633"
               target="_blank"
+              aria-label="Contactar al WhatsApp de la clínica"
               ><i class="fab fa-whatsapp"></i
             ></a>
           </li>
@@ -877,7 +879,6 @@
 
     <script src="js/tratamientos.js"></script>
     <script src="js/index.js"></script>
-    <script src="js/slider.js"></script>
     <script src="js/pago.js"></script>
 
     <script>
