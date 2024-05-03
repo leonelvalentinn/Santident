@@ -19,6 +19,18 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+        <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-RC1TN7KDD7">
+    </script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-RC1TN7KDD7');
+    </script>
+    
     <title>Santident Clínica Dental</title>
     <link rel="shortcut icon" href="imagenes/favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="css/styles.css" />
