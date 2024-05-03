@@ -652,37 +652,67 @@
           <div class="swiper-wrapper">
             <div class="swiper-slide slide-promo">
               <div class="promo-item">
-                <img src="imagenes/promociones/promo-1.webp" alt="Promoción">
+                <img src="imagenes/promociones/promo-mayo-1.webp" alt="Promoción de endodoncia">
                 <div>
-                  <p>No dejes pasar esta oportunidad única para cuidar tu salud bucal. Aprovecha nuestra promoción especial que incluye dos limpiezas dentales completas por tan sólo $900. Con este tratamiento, podrás mantener tus dientes y encías en óptimas condiciones.</p>
+                  <p>¡Promoción especial! Endodoncia por solo $1,999, con estudios radiológicos incluidos. Recibe un tratamiento de calidad y alivia tu dolor dental. ¡Agenda tu cita hoy!</p>
                   <a href="https://api.whatsapp.com/send?phone=524531331633" target="_blank" rel="noopener noreferrer">Agenda tu cita</a>
                 </div>
               </div>
             </div>
             <div class="swiper-slide slide-promo">
               <div class="promo-item">
-                <img src="imagenes/promociones/promo-2.webp" alt="Promocion">
+                <img src="imagenes/promociones/promo-mayo-2.webp" alt="Promoción de dos resinas">
                 <div>
-                  <p>¡Aprovecha nuestra promoción especial para la colocación de brackets en nuestra clínica dental! Obtén una sonrisa perfecta a un precio excepcional. Agenda tu consulta hoy mismo para más detalles.</p>
+                  <p>¡Celebra el Mes de la Madre! Consigue dos resinas por solo $999. ¡Regálale a mamá una sonrisa radiante! Agenda tu cita hoy.</p>
                   <a href="https://api.whatsapp.com/send?phone=524531331633" target="_blank" rel="noopener noreferrer">Agenda tu cita</a>
                 </div>
               </div>
             </div>
             <div class="swiper-slide slide-promo">
               <div class="promo-item">
-                <img src="imagenes/promociones/promo-3.webp" alt="Promocion">
+                <img src="imagenes/promociones/promo-mayo-3.webp" alt="Promocion">
                 <div>
-                  <p>Aprovecha al máximo nuestra increíble promoción con un 30% de descuento en brackets autoligados. Con nuestros brackets autoligados, podrás corregir tu dentadura de manera más rápida y cómoda que nunca.</p>
+                  <p>¡Regálale a mamá una sonrisa brillante! Limpieza dental con ultrasonido por solo $400 este Mes de la Madre. ¡Agenda tu cita hoy!</p>
                   <a href="https://api.whatsapp.com/send?phone=524531331633" target="_blank" rel="noopener noreferrer">Agenda tu cita</a>
                 </div>
               </div>
             </div>
             <div class="swiper-slide slide-promo">
               <div class="promo-item">
-                <img src="imagenes/promociones/promo-4.webp" alt="Promocion">
+                <img src="imagenes/promociones/promo-mayo-4.webp" alt="Promocion">
                 <div>
                   <p>
-                    Aprovecha nuestra promoción especial de endodoncia desde tan sólo $1,900 (Rayos X incluidos). Con este tratamiento, podrás resolver problemas de raíz y mantener tus dientes sanos y fuertes.</p>
+                  ¡Sonrisa perfecta para mamá! Placas dentales desde $7,500 en el Mes de la Madre. ¡Agenda tu cita hoy!</p>
+                  <a href="https://api.whatsapp.com/send?phone=524531331633" target="_blank" rel="noopener noreferrer">Agenda tu cita</a>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide slide-promo">
+              <div class="promo-item">
+                <img src="imagenes/promociones/promo-mayo-5.webp" alt="Promocion">
+                <div>
+                  <p>
+                  ¡Regálale a mamá una sonrisa brillante! Blanqueamiento dental por solo $1,999 este Mes de la Madre. ¡Agenda tu cita hoy!</p>
+                  <a href="https://api.whatsapp.com/send?phone=524531331633" target="_blank" rel="noopener noreferrer">Agenda tu cita</a>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide slide-promo">
+              <div class="promo-item">
+                <img src="imagenes/promociones/promo-mayo-6.webp" alt="Promocion">
+                <div>
+                  <p>
+                  ¡Sonrisa perfecta para mamá! Placas dentales desde $7,500 en el Mes de la Madre. ¡Agenda tu cita hoy!</p>
+                  <a href="https://api.whatsapp.com/send?phone=524531331633" target="_blank" rel="noopener noreferrer">Agenda tu cita</a>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide slide-promo">
+              <div class="promo-item">
+                <img src="imagenes/promociones/promo-mayo-7.webp" alt="Promocion" style="max-height: 300px; width: auto !important;">
+                <div>
+                  <p>
+                  ¡Aprovecha! Ortodoncia metálica y de autoligado con 10% de descuento. ¡Corrige tu sonrisa y ahorra! Agenda tu cita hoy.</p>
                   <a href="https://api.whatsapp.com/send?phone=524531331633" target="_blank" rel="noopener noreferrer">Agenda tu cita</a>
                 </div>
               </div>
