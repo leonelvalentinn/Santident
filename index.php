@@ -177,7 +177,7 @@
     <h2>Tratamientos</h2>
     <div class="servicios" id="container-tratamientos">
       <div class="item_servicios">
-        <a href="https://wa.me/524531331633?text=Buenas%20tardes,%20solicito%20informaci%C3%B3n%20sobre" id="trata_uno" aria-label="Contactar al WhatsApp de la clínica"><img src="imagenes/rayos-x.png" alt="" /></a>
+        <a id="trata_uno" aria-label="Ir a la página de radiología" href="radiologia.php"><img src="imagenes/rayos-x.png" alt="" /></a>
         <div class="nombre_servicio">
           <h4>Radiología Dental</h4>
         </div>
@@ -241,6 +241,7 @@
           <li>Caldwell</li>
           <li>ºA.T.M. Boca abierta y Boca cerrada</li>
         </ul>
+        <a href="radiologia.php">Conoce más</a>
       </div>
     </div>
   </section>
