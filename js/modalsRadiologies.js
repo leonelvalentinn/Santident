@@ -119,12 +119,14 @@ btnService.map((btn) => {
         <img src=${txCe[btn.id - 8].imgSrc} alt=${'Imagen de ' + txCe[btn.id - 8].title}>
         <strong>${txCe[btn.id - 8].title}</strong>
         <p>${txCe[btn.id - 8].text}</p>
+        <a target="_blank" rel="noopener noreferrer" href="https://wa.me/524531331633?text=Buenas%20tardes,%20solicito%20informaci%C3%B3n%20sobre" class="menu_links" aria-label="Mandar mensaje al WhatsApp de Santident">Agenda tu cita</a>
       `
     } else {
       $infoServiceContainer.innerHTML = `
         <img src=${infoRadiologies[btn.id].imgSrc} alt=${'Imagen de ' + infoRadiologies[btn.id].title}>
         <strong>${infoRadiologies[btn.id].title}</strong>
         <p>${infoRadiologies[btn.id].text}</p>
+        <a target="_blank" rel="noopener noreferrer" href="https://wa.me/524531331633?text=Buenas%20tardes,%20solicito%20informaci%C3%B3n%20sobre" class="menu_links" aria-label="Mandar mensaje al WhatsApp de Santident">Agenda tu cita</a>
       `
     }
     $containerModal.classList.add('show-modal')

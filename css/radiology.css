@@ -50,7 +50,7 @@
 }
 
 .servicios img {
-  max-width: 100px;
+  max-width: 80px;
 }
 
 .modal-services {
@@ -168,9 +168,50 @@
   align-items: center;
   flex-direction: column;
   display: flex;
+  padding: 0 1rem;
 }
 
-.tratamientos {
+#infoService a {
+  padding: 0.5rem 1rem;
+  border-radius: 12px;
+  background-color: var(--blue-200);
+  color: white;
+  text-decoration: none;
+  transition: all 0.2s linear;
+}
+
+#infoService a:hover {
+  background-color: white;
+  color: var(--blue-200);
+  transition: all 0.2s linear;
+}
+
+.item_cita a {
+  margin-top: 16px;
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  border-radius: 12px;
+  background-color: white;
+  color: var(--blue-200);
+  text-decoration: none;
+  transition: all 0.2s linear;
+}
+
+.item_cita a:hover {
+  background-color: var(--green-100);
+  transition: all 0.2s linear;
+}
+
+small {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.container-cita {
+  grid-template-columns: repeat(1, 1fr);
+}
+
+.bg-shape {
   background-image: url(../imagenes/radiology/bg-cita.webp);
 }
 
@@ -184,8 +225,12 @@
 }
 
 .servicios {
-  grid-template-columns: repeat(2, minmax(200px, 400px));
   place-content: center;
+}
+
+.grid-gallery img {
+  height: 100%;
+  object-fit: cover;
 }
 
 @media (min-width: 768px) {
@@ -217,6 +262,15 @@
 
   .txt small {
     margin-bottom: 5px;
+  }
+
+  .servicios img {
+    max-width: 100px;
+  }
+
+  .container-cita {
+    place-content: center;
+    grid-template-columns: repeat(2, minmax(200px, 400px));
   }
 }
 

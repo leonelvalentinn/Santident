@@ -131,18 +131,10 @@
         </div>
         <ul class="menu">
           <li><a href="index.php" class="menu_links">Inicio</a></li>
-          <li><a href="#nosotros" class="menu_links">Nosotros</a></li>
-          <li><a href="#promociones" class="menu_links">Promociones</a></li>
-          <!--<li>
-              <a
-                href="https://api.whatsapp.com/send?phone=573204966930"
-                class="urgencias menu_links"
-                target="_blank"
-                >Urgencias
-              </a>
-            </li>-->
+          <li><a href="index.php#nosotros" class="menu_links">Nosotros</a></li>
+          <li><a href="index.php#promociones" class="menu_links">Promociones</a></li>
+          <li><a href="#" class="menu_links">Radiología</a></li>
           <li><a href="#servicios" class="menu_links">Tratamientos</a></li>
-
           <li><a href="#ubicacion" class="menu_links">Ubicación</a></li>
           <li><a href="https://wa.me/524531331633?text=Buenas%20tardes,%20solicito%20informaci%C3%B3n%20sobre" class="menu_links">Contacto</a></li>
         </ul>
@@ -158,7 +150,7 @@
           <img src="imagenes/santident/somos-7.webp" alt="Fotografía del Dr. Lino">
           <div class="hero-txt">
             <h1>Radiología y Diagnósticos odontológicos</h1>
-            <p>Si has llegado hasta aquí, probablemente lleves un tiempo pensando en llevar a cabo ese tratamiento dental que va a cambiar tu sonrisa. Y es que, cuando se trata de salud, solamente queremos estar en las mejores manos.</p>
+            <p>Ofrecemos servicios avanzados de radiología y diagnósticos odontológicos, utilizando tecnología de última generación para proporcionar imágenes precisas y detalladas. Nuestro equipo de expertos se dedica a brindar diagnósticos rápidos y confiables, asegurando una atención de alta calidad y personalizada para cada paciente.</p>
             <a href="#Servicios">Ver Servicios</a>
           </div>
         </div>
@@ -168,7 +160,7 @@
           <img src="imagenes/radiology/equipo-1.webp" alt="Equipo de radiología">
           <div class="hero-txt">
             <h1>Radiología y Diagnósticos odontológicos</h1>
-            <p>Si has llegado hasta aquí, probablemente lleves un tiempo pensando en llevar a cabo ese tratamiento dental que va a cambiar tu sonrisa. Y es que, cuando se trata de salud, solamente queremos estar en las mejores manos.</p>
+            <p>Ofrecemos servicios avanzados de radiología y diagnósticos odontológicos, utilizando tecnología de última generación para proporcionar imágenes precisas y detalladas. Nuestro equipo de expertos se dedica a brindar diagnósticos rápidos y confiables, asegurando una atención de alta calidad y personalizada para cada paciente.</p>
             <a href="#Servicios">Ver Servicios</a>
           </div>
         </div>
@@ -178,7 +170,7 @@
           <img src="imagenes/radiology/equipo-2.webp" alt="Equipo de radiología">
           <div class="hero-txt">
             <h1>Radiología y Diagnósticos odontológicos</h1>
-            <p>Si has llegado hasta aquí, probablemente lleves un tiempo pensando en llevar a cabo ese tratamiento dental que va a cambiar tu sonrisa. Y es que, cuando se trata de salud, solamente queremos estar en las mejores manos.</p>
+            <p>Ofrecemos servicios avanzados de radiología y diagnósticos odontológicos, utilizando tecnología de última generación para proporcionar imágenes precisas y detalladas. Nuestro equipo de expertos se dedica a brindar diagnósticos rápidos y confiables, asegurando una atención de alta calidad y personalizada para cada paciente.</p>
             <a href="#Servicios">Ver Servicios</a>
           </div>
         </div>
@@ -190,6 +182,7 @@
   </div>
   <div class="tratamientos" id="servicios">
     <h2>Radiografías</h2>
+    <small>Da click en la imagen para conocer más</small>
     <div class="servicios" id="container-services">
     </div>
   </div>
@@ -216,22 +209,28 @@
       </div>
     </div>
   </section>
-  <div class="tratamientos">
+  <div class="tratamientos bg-shape">
     <div class="container-appointment">
       <h2>Estudios con previa cita</h2>
-      <div class="servicios">
+      <div class="servicios container-cita">
         <div class="item_cita">
-          <img src='' alt='' />
+          <img src='imagenes/radiology/modelos.svg' alt='Icono cámara' />
           <div class="nombre_servicio">
-            <h4>Fotografías</h4>
-            <p></p>
+            <h4 style="color: white;margin-bottom: 10px;">Fotografías</h4>
+            <p style="color: white;">La fotografía dental nos permite analizar al milímetro la anatomía oral, y nos proporciona un buen dossier gráfico que ayuda a optimizar el trabajo y seguir avanzando hacia una mayor calidad.</p>
+            <a target="_blank" rel="noopener noreferrer" href="https://wa.me/524531331633?text=Buenas%20tardes,%20solicito%20informaci%C3%B3n%20sobre" class="menu_links" aria-label="Mandar mensaje al WhatsApp de Santident">Agenda tu cita</a>
           </div>
         </div>
         <div class="item_cita">
-          <img src='' alt='' />
+          <img src='imagenes/radiology/dentadura.webp' alt='Icono Mandibula' style="width: 80px;" />
           <div class="nombre_servicio">
-            <h4>Modelos de Estudio</h4>
-            <p></p>
+            <h4 style="color: white;margin-bottom: 10px;">Modelos de Estudio</h4>
+            <p style="color: white;">Contamos con la más alta
+              tecnología para la obtención de
+              modelos de estudio digitales
+              dinámicos.
+            </p>
+            <a target="_blank" rel="noopener noreferrer" href="https://wa.me/524531331633?text=Buenas%20tardes,%20solicito%20informaci%C3%B3n%20sobre" class="menu_links" aria-label="Mandar mensaje al WhatsApp de Santident">Agenda tu cita</a>
           </div>
         </div>
       </div>
@@ -365,38 +364,16 @@
     <h2>Conoce más de nosotros</h2>
     <div class="grid-gallery">
       <img src="imagenes/santident/somos-5.webp" alt="Galería">
-      <img src="imagenes/santident/somos-8.webp" alt="Galería">
+      <img src="imagenes/radiology/equipo-4.webp" alt="Galería">
       <img src="imagenes/santident/somos-20.webp" alt="Galería">
       <img src="imagenes/santident/somos-2.webp" alt="Galería">
-      <img src="imagenes/santident/somos-9.webp" alt="Galería">
+      <img src="imagenes/radiology/equipo-3.webp" alt="Galería">
       <img src="imagenes/santident/somos-11.webp" alt="Galería">
       <img src="imagenes/santident/somos-12.webp" alt="Galería">
       <img src="imagenes/santident/somos-15.webp" alt="Galería">
       <img src="imagenes/santident/somos-19.webp" alt="Galería">
-      <img src="imagenes/santident/somos-1.webp" alt="Galería">
+      <img src="imagenes/radiology/equipo-5.webp" alt="Galería">
       <img src="imagenes/santident/somos-7.webp" alt="Galería">
-    </div>
-  </section>
-  <section class="forma_de_pago" id="pago">
-    <h2>FACILIDADES DE PAGO</h2>
-    <div class="payment_list">
-      <ul class="list">
-        <li class="list__item">
-          <div class="list__button list__button--click">
-            <a href="#" class="nav__link">EFECTIVO</a>
-          </div>
-        </li>
-        <li class="list__item">
-          <div class="list__button list__button--click">
-            <a href="#" class="nav__link">TARJETA DE CRÉDITO Y DÉBITO </a>
-          </div>
-        </li>
-        <li class="list__item">
-          <div class="list__button list__button--click">
-            <a href="#" class="nav__link">TRANSFERENCIA</a>
-          </div>
-        </li>
-      </ul>
     </div>
   </section>
   <div class="section_formulario" id="contactodos">

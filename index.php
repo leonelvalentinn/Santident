@@ -130,18 +130,11 @@
           <li><a href="index.php" class="menu_links">Inicio</a></li>
           <li><a href="#nosotros" class="menu_links">Nosotros</a></li>
           <li><a href="#promociones" class="menu_links">Promociones</a></li>
-          <!--<li>
-              <a
-                href="https://api.whatsapp.com/send?phone=573204966930"
-                class="urgencias menu_links"
-                target="_blank"
-                >Urgencias
-              </a>
-            </li>-->
+          <li><a href="radiologia.php" class="menu_links">Radiología</a></li>
           <li><a href="#servicios" class="menu_links">Tratamientos</a></li>
 
           <li><a href="#ubicacion" class="menu_links">Ubicación</a></li>
-          <li><a href="https://wa.me/524531331633?text=Buenas%20tardes,%20solicito%20informaci%C3%B3n%20sobre" class="menu_links">Contacto</a></li>
+          <li><a href="https://wa.me/524531331633?text=Buenas%20tardes,%20solicito%20informaci%C3%B3n%20sobre" class="menu_links" target="_blank" rel="noopener noreferrer">Contacto</a></li>
         </ul>
       </nav>
     </div>
@@ -151,7 +144,7 @@
       <div class="hero-txt">
         <h1>Dentista a tu alcance</h1>
         <p>Si has llegado hasta aquí, probablemente lleves un tiempo pensando en llevar a cabo ese tratamiento dental que va a cambiar tu sonrisa. Y es que, cuando se trata de salud, solamente queremos estar en las mejores manos.</p>
-        <a href="#Servicios">Ver Servicios</a>
+        <a href="#servicios">Ver Servicios</a>
       </div>
     </div>
   </section>
