@@ -9,13 +9,10 @@
   <!-- Open Graph data -->
   <meta property="og:title" content="Santident Clínica Dental">
   <meta property="og:type" content="Web">
-  <meta property="og:url" content="https://clinicasantident.mx">
+  <meta property="og:url" content="https://clinicasantident.mx/radiologia">
   <meta property="og:image" content="https://clinicasantident.mx/imagenes/logo.webp">
   <meta property="og:description" content="¡Bienvenido a Santident! Tu sonrisa es nuestra prioridad. En nuestra clínica dental, ofrecemos atención personalizada y de calidad respaldada por años de experiencia y tecnología de vanguardia. Descubre cómo podemos ayudarte a lograr una salud bucal óptima y una sonrisa radiante. ¡Programa tu cita hoy mismo!">
   <meta property="og:site_name" content="Santident Clínica Dental">
-  <meta property="article:published_time" content="2024-02-06T05:59:00+01:00">
-  <meta property="article:modified_time" content="2024-02-06T05:59:00+01:00">
-  <meta property="article:section" content="Clínica dental">
 
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -35,16 +32,16 @@
     gtag('config', 'G-RC1TN7KDD7');
   </script>
 
-  <title>Santident Clínica Dental</title>
+  <title>Radiología Dental Apatzingán</title>
   <link rel="shortcut icon" href="imagenes/favicon.png" type="image/x-icon">
   <link rel="stylesheet" href="css/styles.css" />
+  <link rel="stylesheet" href="css/radiology.css" />
   <script src="https://www.google.com/recaptcha/api.js?hl=es" async defer></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hamburgers/1.1.3/hamburgers.min.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
   <link rel="stylesheet" href="aos/aos.css" />
   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
-  <script src="aos/aos.js"></script>
   <style>
     .swiper {
       width: 90%;
@@ -104,6 +101,12 @@
       background-color: var(--blue-200) !important;
       transition: all 0.2s linear;
     }
+
+    .SwiperHero {
+      width: 100%;
+      margin: 0;
+      height: 80dvh;
+    }
   </style>
 </head>
 
@@ -146,111 +149,94 @@
       </nav>
     </div>
   </header>
-  <section class="container-1 hero-bg">
-    <div class="container-1 hero-container">
-      <div class="hero-txt">
-        <h1>Dentista a tu alcance</h1>
-        <p>Si has llegado hasta aquí, probablemente lleves un tiempo pensando en llevar a cabo ese tratamiento dental que va a cambiar tu sonrisa. Y es que, cuando se trata de salud, solamente queremos estar en las mejores manos.</p>
-        <a href="#Servicios">Ver Servicios</a>
+  <div class="swiper SwiperHero">
+    <!-- Additional required wrapper -->
+    <div class="swiper-wrapper">
+      <!-- Slides -->
+      <div class="swiper-slide">
+        <div class="container-hero-slider">
+          <img src="imagenes/santident/somos-7.webp" alt="Fotografía del Dr. Lino">
+          <div class="hero-txt">
+            <h1>Radiología y Diagnósticos odontológicos</h1>
+            <p>Si has llegado hasta aquí, probablemente lleves un tiempo pensando en llevar a cabo ese tratamiento dental que va a cambiar tu sonrisa. Y es que, cuando se trata de salud, solamente queremos estar en las mejores manos.</p>
+            <a href="#Servicios">Ver Servicios</a>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="container-hero-slider">
+          <img src="imagenes/radiology/equipo-1.webp" alt="Equipo de radiología">
+          <div class="hero-txt">
+            <h1>Radiología y Diagnósticos odontológicos</h1>
+            <p>Si has llegado hasta aquí, probablemente lleves un tiempo pensando en llevar a cabo ese tratamiento dental que va a cambiar tu sonrisa. Y es que, cuando se trata de salud, solamente queremos estar en las mejores manos.</p>
+            <a href="#Servicios">Ver Servicios</a>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="container-hero-slider">
+          <img src="imagenes/radiology/equipo-2.webp" alt="Equipo de radiología">
+          <div class="hero-txt">
+            <h1>Radiología y Diagnósticos odontológicos</h1>
+            <p>Si has llegado hasta aquí, probablemente lleves un tiempo pensando en llevar a cabo ese tratamiento dental que va a cambiar tu sonrisa. Y es que, cuando se trata de salud, solamente queremos estar en las mejores manos.</p>
+            <a href="#Servicios">Ver Servicios</a>
+          </div>
+        </div>
       </div>
     </div>
-  </section>
-  <!--Nosotros-->
-  <section class="container" id="nosotros">
-    <div class="nosotros-container">
-      <div class="txt">
-        <h1>Santident Clínica Dental</h1>
-        <p>
-          Somos una clínica dental de vanguardia en toda la región, comprometidos con ofrecer los tratamientos más modernos y avanzados, accesibles para todas las personas. En nuestra búsqueda de brindar atención de calidad, creemos firmemente en el poder de una sonrisa y en su impacto en la vida diaria.</p>
-      </div>
-      <img src="imagenes/santident/somos-7.webp" alt="Equipo Santident" class="imagen1">
-    </div>
-  </section>
-  <!--Fin Nosotros-->
-  <!--Nosotros-->
-  <section class="container bg-color">
-    <div class="nosotros-container">
-      <img src="imagenes/santident/somos-5.webp" alt="Equipo Santident" class="imagen2">
-      <div class="txt">
-        <h2>Somos una clínica con tecnología e innovación</h2>
-        <p>
-          Ofrecemos tratamientos dentales actuales que incorporan los avances más recientes en el campo odontológico. Nos comprometemos a proporcionar servicios de calidad, respaldados por un equipo de profesionales altamente capacitados y comprometidos con la excelencia en cada paso del proceso. La calidad, el profesionalismo y la seriedad son los pilares fundamentales que guían nuestro enfoque en la atención dental.</p>
-        <a href="https://wa.me/524531331633?text=Buenas%20tardes,%20solicito%20informaci%C3%B3n%20sobre" rel="noopener noreferrer">Agenda tu cita</a>
-      </div>
-    </div>
-  </section>
-  <!--Fin Nosotros-->
+    <!-- If we need navigation buttons -->
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+  </div>
   <div class="tratamientos" id="servicios">
-    <h2>Tratamientos</h2>
-    <div class="servicios" id="container-tratamientos">
-      <div class="item_servicios">
-        <a href="https://wa.me/524531331633?text=Buenas%20tardes,%20solicito%20informaci%C3%B3n%20sobre" id="trata_uno" aria-label="Contactar al WhatsApp de la clínica"><img src="imagenes/rayos-x.png" alt="" /></a>
-        <div class="nombre_servicio">
-          <h4>Radiología Dental</h4>
-        </div>
-      </div>
-      <div class="item_servicios">
-        <a href="https://wa.me/524531331633?text=Buenas%20tardes,%20solicito%20informaci%C3%B3n%20sobre" id="trata_dos" aria-label="Contactar al WhatsApp de la clínica"><img src="imagenes/tirantes.png" alt="" /></a>
-        <div class="nombre_servicio">
-          <h4>Ortodoncia Dental</h4>
-        </div>
-      </div>
-      <div class="item_servicios">
-        <a href="https://wa.me/524531331633?text=Buenas%20tardes,%20solicito%20informaci%C3%B3n%20sobre" id="trata_tres" aria-label="Contactar al WhatsApp de la clínica">
-          <img src="imagenes/endodoncia.png" alt="" /></a>
-        <div class="nombre_servicio">
-          <h4>Endodoncia Avanzada</h4>
-        </div>
-      </div>
-      <div class="item_servicios">
-        <a href="https://wa.me/524531331633?text=Buenas%20tardes,%20solicito%20informaci%C3%B3n%20sobre" id="trata_cuatro" aria-label="Contactar al WhatsApp de la clínica">
-          <img src="imagenes/corona-dental.png" alt="" /></a>
-        <div class="nombre_servicio">
-          <h4>Coronas</h4>
-        </div>
-      </div>
-      <div class="item_servicios">
-        <a href="https://wa.me/524531331633?text=Buenas%20tardes,%20solicito%20informaci%C3%B3n%20sobre" id="trata_cinco" aria-label="Contactar al WhatsApp de la clínica">
-          <img src="imagenes/cirugia-dental.png" alt="" /></a>
-        <div class="nombre_servicio">
-          <h4>Cirugía Bucal</h4>
-        </div>
-      </div>
-      <div class="item_servicios">
-        <a href="https://wa.me/524531331633?text=Buenas%20tardes,%20solicito%20informaci%C3%B3n%20sobre" id="trata_seis" aria-label="Contactar al WhatsApp de la clínica"><img src="imagenes/diente.png" alt="" /></a>
-        <div class="nombre_servicio">
-          <h4>Operatoria Dental</h4>
-        </div>
-      </div>
+    <h2>Radiografías</h2>
+    <div class="servicios" id="container-services">
     </div>
-    <button id="more">Ver más</button>
-    <button id="less">Ver menos</button>
   </div>
   <section class="container bg-color" style="flex-direction: column; padding: 60px 0;">
-    <h2 style="margin-bottom: 15px;">Radiología Dental</h2>
+    <h2 style="margin-bottom: 15px;">Radiografía Cefalométrica</h2>
     <div class="nosotros-container container-radio" style="max-width: 1400px !important;">
       <div class="txt radio">
         <p style="text-align: justify; color: var(--blue-200);">
-          En nuestro centro, contamos con la mejor tecnología disponible para realizar radiografías dentales de todo tipo. Nuestro equipo está equipado con los últimos avances en tecnología radiológica, lo que nos permite obtener imágenes precisas y detalladas de la boca y los dientes de nuestros pacientes.
+          Estas radiografías ofrecen una imagen de perfil detallada de las estructuras óseas y dentales de la cabeza y la cara, esencial para evaluar la relación entre los huesos del cráneo, la mandíbula y los dientes, así como para detectar anomalías esqueléticas en pacientes dentales.
         </p>
       </div>
-      <img src="imagenes/radiografia.webp" alt="Equipo Santident" style="max-width: 450px !important; border-radius: 10px;">
+      <img src="imagenes/radiology/radio.webp" alt="Equipo Santident" style="max-width: 450px !important; border-radius: 10px;">
       <div class="txt">
         <h2><strong style="color: var(--blue-200); font-size: 1.4rem;">Contamos con radiografías:</strong></h2>
+        <small>Da click para conocer más</small>
         <ul style="color: var(--blue-200);">
-          <li>Periapical</li>
-          <li>Panorámica</li>
-          <li>Lateral de cráneo</li>
-          <li>AP Anteroposterior</li>
-          <li>PA Posteroanterior</li>
-          <li>Carpal</li>
-          <li>Waters</li>
-          <li>Caldwell</li>
-          <li>ºA.T.M. Boca abierta y Boca cerrada</li>
+          <li><button class="service-btn" id="8">Rickets</button></li>
+          <li><button class="service-btn" id="9">Tweed</button></li>
+          <li><button class="service-btn" id="10">Steiner</button></li>
+          <li><button class="service-btn" id="11">Maac Namara</button></li>
+          <li><button class="service-btn" id="12">Jarabak</button></li>
+          <li><button class="service-btn" id="13">Downs</button></li>
         </ul>
       </div>
     </div>
   </section>
+  <div class="tratamientos">
+    <div class="container-appointment">
+      <h2>Estudios con previa cita</h2>
+      <div class="servicios">
+        <div class="item_cita">
+          <img src='' alt='' />
+          <div class="nombre_servicio">
+            <h4>Fotografías</h4>
+            <p></p>
+          </div>
+        </div>
+        <div class="item_cita">
+          <img src='' alt='' />
+          <div class="nombre_servicio">
+            <h4>Modelos de Estudio</h4>
+            <p></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
   <section class="doctores">
     <h2>Opiniones de Nuestros Pacientes</h2>
     <!-- Swiper -->
@@ -363,85 +349,18 @@
     </div>
   </section>
 
-  <section class="container bg-color" style="flex-direction: column;" id="promociones">
-    <h2>Promociones</h2>
-    <div class="container-promociones">
-      <div class="swiper SwiperPromos">
-        <div class="swiper-wrapper">
-          <div class="swiper-slide slide-promo">
-            <div class="promo-item">
-              <img src="imagenes/promociones/promo-mayo-1.webp" alt="Promoción de endodoncia">
-              <div>
-                <p>¡Promoción especial! Endodoncia por solo $1,999, con estudios radiológicos incluidos. Recibe un tratamiento de calidad y alivia tu dolor dental. ¡Agenda tu cita hoy!</p>
-                <a href="https://api.whatsapp.com/send?phone=524531331633" target="_blank" rel="noopener noreferrer">Agenda tu cita</a>
-              </div>
-            </div>
-          </div>
-          <div class="swiper-slide slide-promo">
-            <div class="promo-item">
-              <img src="imagenes/promociones/promo-mayo-2.webp" alt="Promoción de dos resinas">
-              <div>
-                <p>¡Celebra el Mes de la Madre! Consigue dos resinas por solo $999. ¡Regálale a mamá una sonrisa radiante! Agenda tu cita hoy.</p>
-                <a href="https://api.whatsapp.com/send?phone=524531331633" target="_blank" rel="noopener noreferrer">Agenda tu cita</a>
-              </div>
-            </div>
-          </div>
-          <div class="swiper-slide slide-promo">
-            <div class="promo-item">
-              <img src="imagenes/promociones/promo-mayo-3.webp" alt="Promocion">
-              <div>
-                <p>¡Regálale a mamá una sonrisa brillante! Limpieza dental con ultrasonido por solo $400 este Mes de la Madre. ¡Agenda tu cita hoy!</p>
-                <a href="https://api.whatsapp.com/send?phone=524531331633" target="_blank" rel="noopener noreferrer">Agenda tu cita</a>
-              </div>
-            </div>
-          </div>
-          <div class="swiper-slide slide-promo">
-            <div class="promo-item">
-              <img src="imagenes/promociones/promo-mayo-4.webp" alt="Promocion">
-              <div>
-                <p>
-                  ¡Sonrisa perfecta para mamá! Placas dentales desde $7,500 en el Mes de la Madre. ¡Agenda tu cita hoy!</p>
-                <a href="https://api.whatsapp.com/send?phone=524531331633" target="_blank" rel="noopener noreferrer">Agenda tu cita</a>
-              </div>
-            </div>
-          </div>
-          <div class="swiper-slide slide-promo">
-            <div class="promo-item">
-              <img src="imagenes/promociones/promo-mayo-5.webp" alt="Promocion">
-              <div>
-                <p>
-                  ¡Regálale a mamá una sonrisa brillante! Blanqueamiento dental por solo $1,999 este Mes de la Madre. ¡Agenda tu cita hoy!</p>
-                <a href="https://api.whatsapp.com/send?phone=524531331633" target="_blank" rel="noopener noreferrer">Agenda tu cita</a>
-              </div>
-            </div>
-          </div>
-          <div class="swiper-slide slide-promo">
-            <div class="promo-item">
-              <img src="imagenes/promociones/promo-mayo-6.webp" alt="Promocion">
-              <div>
-                <p>
-                  ¡Sonrisa perfecta para mamá! Placas dentales desde $7,500 en el Mes de la Madre. ¡Agenda tu cita hoy!</p>
-                <a href="https://api.whatsapp.com/send?phone=524531331633" target="_blank" rel="noopener noreferrer">Agenda tu cita</a>
-              </div>
-            </div>
-          </div>
-          <div class="swiper-slide slide-promo">
-            <div class="promo-item">
-              <img src="imagenes/promociones/promo-mayo-7.webp" alt="Promocion" style="max-height: 300px; width: auto !important;">
-              <div>
-                <p>
-                  ¡Aprovecha! Ortodoncia metálica y de autoligado con 10% de descuento. ¡Corrige tu sonrisa y ahorra! Agenda tu cita hoy.</p>
-                <a href="https://api.whatsapp.com/send?phone=524531331633" target="_blank" rel="noopener noreferrer">Agenda tu cita</a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="swiper-button-next"></div>
-        <div class="swiper-button-prev"></div>
-      </div>
+  <div class="modal-services" id="modal-info">
+    <div class="modal-container">
+      <svg id="close-modal" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-x">
+        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+        <path d="M18 6l-12 12" />
+        <path d="M6 6l12 12" />
+      </svg>
+      <div id="infoService">
 
+      </div>
     </div>
-  </section>
+  </div>
   <section class="container gallery" style="flex-direction: column;">
     <h2>Conoce más de nosotros</h2>
     <div class="grid-gallery">
@@ -456,20 +375,6 @@
       <img src="imagenes/santident/somos-19.webp" alt="Galería">
       <img src="imagenes/santident/somos-1.webp" alt="Galería">
       <img src="imagenes/santident/somos-7.webp" alt="Galería">
-    </div>
-  </section>
-  <section class="container gallery" style="flex-direction: column;">
-    <h2>Antes y después</h2>
-    <h5>Pasa el mouse o dale click a la imagen</h5>
-    <div class="casos-exito">
-      <article>
-        <img src="imagenes/casos/ortodoncia.webp" alt="Antes y después de un tratamiento de ortodoncia">
-        <a href="https://wa.me/524531331633?text=Buenas%20tardes,%20solicito%20informaci%C3%B3n%20sobre%20su%20tratamiento%20de%20ortodoncia" target="_blank" rel="noopener noreferrer">Ortodoncia</a>
-      </article>
-      <article>
-        <img src="imagenes/casos/carillas-zirconia.webp" alt="Antes y después de un tratamiento de carillas de zirconia">
-        <a href="https://wa.me/524531331633?text=Buenas%20tardes,%20solicito%20informaci%C3%B3n%20sobre%20su%20tratamiento%20de%20carillas" target="_blank" rel="noopener noreferrer">Carillas</a>
-      </article>
     </div>
   </section>
   <section class="forma_de_pago" id="pago">
@@ -623,13 +528,9 @@
     </div>
   </footer>
 
-  <script src="js/tratamientos.js"></script>
+  <script src="js/modalsRadiologies.js"></script>
   <script src="js/index.js"></script>
   <script src="js/pago.js"></script>
-
-  <script>
-    AOS.init();
-  </script>
   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
   <script>
     var swiper = new Swiper(".SwiperPromos", {
@@ -704,6 +605,26 @@
           slidesPerView: 3,
           slidesPerGroup: 1,
         },
+      },
+    });
+  </script>
+  <script>
+    var swiper = new Swiper(".SwiperHero", {
+      slidesPerView: 1,
+      slidesPerGroup: 1,
+      effect: 'fade',
+      // autoplay: {
+      //   delay: 4000,
+      // },
+      loop: true,
+      loopFillGroupWithBlank: true,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
       },
     });
   </script>
