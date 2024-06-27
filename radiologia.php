@@ -2,16 +2,16 @@
 <html lang="es">
 
 <head>
-  <meta name="description" content="¡Bienvenido a Santident! Tu sonrisa es nuestra prioridad. En nuestra clínica dental, ofrecemos atención personalizada y de calidad respaldada por años de experiencia y tecnología de vanguardia. Descubre cómo podemos ayudarte a lograr una salud bucal óptima y una sonrisa radiante. ¡Programa tu cita hoy mismo!">
+  <meta name="description" content="¡Bienvenido a Radiología Apatzingán! Tu sonrisa es nuestra prioridad. En nuestra clínica dental, ofrecemos atención personalizada y de calidad respaldada por años de experiencia y tecnología de vanguardia. Descubre cómo podemos ayudarte a lograr una salud bucal óptima y una sonrisa radiante. ¡Programa tu cita hoy mismo!">
   <meta name="keywords" content="dentista, salud dental, odontología, ortodoncia, estética dental, limpieza dental, chequeo dental, Harmony Dental Clinic">
   <meta name="author" content="Leonel Valentín">
   <meta name="robots" content="index, follow">
   <!-- Open Graph data -->
-  <meta property="og:title" content="Santident Clínica Dental">
+  <meta property="og:title" content="Bienvenido a Radiología Apatzingán">
   <meta property="og:type" content="Web">
   <meta property="og:url" content="https://clinicasantident.mx/radiologia">
-  <meta property="og:image" content="https://clinicasantident.mx/imagenes/logo.webp">
-  <meta property="og:description" content="¡Bienvenido a Santident! Tu sonrisa es nuestra prioridad. En nuestra clínica dental, ofrecemos atención personalizada y de calidad respaldada por años de experiencia y tecnología de vanguardia. Descubre cómo podemos ayudarte a lograr una salud bucal óptima y una sonrisa radiante. ¡Programa tu cita hoy mismo!">
+  <meta property="og:image" content="https://clinicasantident.mx/imagenes/radiology/logo.webp">
+  <meta property="og:description" content="¡Bienvenido a Radiología Apatzingán! Tu sonrisa es nuestra prioridad. En nuestra clínica dental, ofrecemos atención personalizada y de calidad respaldada por años de experiencia y tecnología de vanguardia. Descubre cómo podemos ayudarte a lograr una salud bucal óptima y una sonrisa radiante. ¡Programa tu cita hoy mismo!">
   <meta property="og:site_name" content="Santident Clínica Dental">
 
   <meta charset="UTF-8" />
@@ -127,7 +127,7 @@
           </label>
         </div>
         <div class="logo_nav">
-          <a href="index.php" aria-label="Ir al inicio de la página"><img src="imagenes/logo.webp" alt="" class="Logo Santident" /></a>
+          <a href="index.php" aria-label="Ir al inicio de la página"><img src="imagenes/radiology/logo.webp" alt="Logo Radiología Apatzingán" class="Logo radiology-logo" /></a>
         </div>
         <ul class="menu">
           <li><a href="index.php" class="menu_links">Inicio</a></li>
@@ -196,13 +196,13 @@
       </div>
       <img src="imagenes/radiology/radio.webp" alt="Equipo Santident" style="max-width: 450px !important; border-radius: 10px;">
       <div class="txt">
-        <h2><strong style="color: var(--blue-200); font-size: 1.4rem;">Contamos con radiografías:</strong></h2>
+        <h2><strong style="color: var(--blue-200); font-size: 1.4rem;">Contamos con estudios cefalométricos:</strong></h2>
         <small>Da click para conocer más</small>
         <ul style="color: var(--blue-200);">
           <li><button class="service-btn" id="8">Rickets</button></li>
           <li><button class="service-btn" id="9">Tweed</button></li>
           <li><button class="service-btn" id="10">Steiner</button></li>
-          <li><button class="service-btn" id="11">Maac Namara</button></li>
+          <li><button class="service-btn" id="11">Mac Namara</button></li>
           <li><button class="service-btn" id="12">Jarabak</button></li>
           <li><button class="service-btn" id="13">Downs</button></li>
         </ul>
